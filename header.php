@@ -31,6 +31,7 @@
 <script>
 	$(document).ready(function(){
 			$(*).hasClass('listing_back_button').addClass(" button"); 
+			console.log('loaded jquery');
 	});
 </script>
 </head>
