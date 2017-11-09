@@ -25,6 +25,8 @@
 <link rel='stylesheet' id='ionicons-css'  href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=1.0' type='text/css' media='all' />
 <link rel='stylesheet' id='simple-social-icons-font-css'  href='https://demo.winningagent.com/agent-focused/wp-content/plugins/simple-social-icons/css/style.css?ver=2.0.1' type='text/css' media='all' />
 <link rel='stylesheet' id='agentfocused-front-page-styles-css'  href='https://demo.winningagent.com/agent-focused/wp-content/themes/agent-focused-pro/style-front.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://demo.winningagent.com/agent-focused/wp-content/themes/agent-focused-pro/js/backstretch-set.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://demo.winningagent.com/agent-focused/wp-content/themes/agent-focused-pro/js/modernizr-custom.js?ver=1.0.0'></script>
 
 </head>
 
