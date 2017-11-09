@@ -20,6 +20,12 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
+<link rel='stylesheet' id='agent-focused-pro-css'  href='https://demo.winningagent.com/agent-focused/wp-content/themes/agent-focused-pro/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css'  href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-social-icons-font-css'  href='https://demo.winningagent.com/agent-focused/wp-content/plugins/simple-social-icons/css/style.css?ver=2.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='agentfocused-front-page-styles-css'  href='https://demo.winningagent.com/agent-focused/wp-content/themes/agent-focused-pro/style-front.css?ver=1.0' type='text/css' media='all' />
+
 </head>
 
 <body <?php body_class(); ?>>
