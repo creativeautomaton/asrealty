@@ -2297,7 +2297,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 --------------------------------------------------------------*/
 
 .site-footer {
-	border-top: 1px solid #eee;
+
 }
 
 .site-footer .wrap {
@@ -3981,7 +3981,6 @@ object {
 		font-size: 14px;
 		font-size: 0.875rem;
 		line-height: 1.6;
-		margin-top: 3em;
 	}
 
 	.site-footer .widget-column.footer-widget-1 {
@@ -4280,3 +4279,8 @@ object {
 		padding: 0;
 	}
 }
+
+
+/* Theme Overrides */
+
+.search-bar{ position: relative; z-index: 2;}
