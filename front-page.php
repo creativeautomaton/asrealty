@@ -15,9 +15,8 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main content" role="main">
 
-		<main class="content" id="genesis-content">
 
 			<div id="search-bar" class="search-bar">
 
@@ -77,8 +76,7 @@ Explore a wide variety of communities, personalize your finishes, and design the
 <a class="alignright button" href="#">Read More</a>
 </div></div>
 		</div></section>
-</div></div></div>
-</main>
+</div></div></div> 
 
 		<?php // Show the selected frontpage content.
 		if ( have_posts() ) :
