@@ -15,7 +15,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main content" role="main">
+	<main id="main" class="site-main" role="main">
 
 
 			<div id="search-bar" class="search-bar">
