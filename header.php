@@ -30,7 +30,7 @@
 
 <script>
 	$(document).ready(function(){
-			$('.listing_back_button').addClass(" button"); 
+			$(*).hasClass('listing_back_button').addClass(" button"); 
 	});
 </script>
 </head>
