@@ -28,6 +28,11 @@
 <script type='text/javascript' src='https://demo.winningagent.com/agent-focused/wp-content/themes/agent-focused-pro/js/backstretch-set.js?ver=1.0.0'></script>
 <script type='text/javascript' src='https://demo.winningagent.com/agent-focused/wp-content/themes/agent-focused-pro/js/modernizr-custom.js?ver=1.0.0'></script>
 
+<script>
+	$(document).ready(function(){
+			$('.listing_back_button').addClass(" button"); 
+	});
+</script>
 </head>
 
 <body <?php body_class(); ?>>
