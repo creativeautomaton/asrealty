@@ -977,7 +977,7 @@ textarea:focus {
 select {
 	border: 1px solid #bbb;
 	-webkit-border-radius: 3px;
-	border-radius: 3px; 
+	border-radius: 3px;
 	max-width: 100%;
 }
 
@@ -4283,3 +4283,15 @@ object {
 /* Theme Overrides */
 
 .search-bar{ position: relative; z-index: 2;}
+.listingSearchWidgetContainer .SearchWidget {
+    width: 100vw !important;
+		max-width: 800px;
+    margin: 0;
+    padding: 0;
+		text-align: center;
+}
+.listingSearchWidgetContainer table {
+    width: 100vw !important;
+    margin: 2rem;
+    padding: 1rem;
+}
