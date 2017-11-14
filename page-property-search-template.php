@@ -50,9 +50,12 @@ get_header(); ?>
 
 					 console.log( 'loaded getSearch ');
 			 }
-			 setTimeout(function () {
-			 		getSearch();
-			 }, 500);
+
+
+					$('#listing_widget_74379e4db9dfa5385f7f38f7e9463d9a').on('load', function() {
+					    getSearch();
+					});
+
 
 		});
 </script>
