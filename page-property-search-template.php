@@ -27,18 +27,21 @@ get_header(); ?>
 		echo $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $zipcode;
 ?>
 
- <script>
-		function getSearch(){
-				var propType = 'con';
-				$("#listing_widget_74379e4db9dfa5385f7f38f7e9463d9a9f6670d31c_propType option").filter(function() {
-				    //may want to use $.trim in here
-				    return $(this).text() == propType;
-				}).prop('selected', true);
+<script>
+	 $(document).ready(function() {
+			 function getSearch(){
+					 var propType = 'con';
+					 $("#listing_widget_74379e4db9dfa5385f7f38f7e9463d9a9f6670d31c_propType option").filter(function() {
+							 //may want to use $.trim in here
+							 return $(this).text() == propType;
+					 }).prop('selected', true);
 
-				console.log( 'loaded getSearch ');
-		}
-		getSearch();
- </script>
+					 console.log( 'loaded getSearch ');
+			 }
+			 getSearch();
+		});
+</script>
+
 
 		<section class="hidden">
 					 <!-- <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" /> -->
