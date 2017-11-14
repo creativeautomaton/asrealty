@@ -84,7 +84,8 @@ get_header(); ?>
 						$.ajax({
 							method: "GET",
 							url: "https://www.marissearch.com/?",
-							data: {   },
+							crossDomain: true,
+							data: { marisOptions  },
 							contentType: contentType,
 						}).fail(function(err){
 							console.log(err);
