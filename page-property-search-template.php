@@ -30,11 +30,22 @@ get_header(); ?>
 <script>
 	 $(document).ready(function() {
 			 function getSearch(){
-					 var propType = 'con';
+					 var propType = <?php echo $propertyType; ?> ;
+					 var listingType = <?php echo $listingType; ?> ;
+			 		 var listingMax = <?php echo $listingMax; ?> ;
+			 		 var listingMin = <?php echo $listingMin; ?> ;
+			 		 var propertyType = <?php echo $propertyType; ?> ;
+			 		 var zipcode = <?php echo $zipcode; ?> ;
+
 					 $(".propType option").filter(function() {
-							 //may want to use $.trim in here
 							 return $(this).val() == propType;
 					 }).attr('selected', true);
+
+					 $("select [name='SearchAttrib'] option").filter(function() {
+							 return $(this).val() == propType;
+					 }).attr('selected', true);
+
+
 
 					 console.log( 'loaded getSearch ');
 			 }

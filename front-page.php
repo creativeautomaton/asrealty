@@ -30,6 +30,12 @@ get_header(); ?>
 								<input value="" name="s" type="hidden">
 									  <input value="listing" name="post_type" type="hidden">
 
+										<select name="saleorlease" id="saleorlease" class="agentpress-taxonomy">
+											<option value="" selected="selected">For Sale or Lease?</option>
+											<option value="sale">Sale</option>
+											<option value="lease">Lease</option>
+										</select>
+
 										<select name="max" id="max" class="agentpress-taxonomy">
 											<option value="" selected="selected">How Much (Max)?</option>
 											<option value="500k-750k">500K-750K</option>
@@ -59,7 +65,7 @@ get_header(); ?>
 											<option value="new">New Construction</option>
 											<option value="com">Commercial</option>
 											<option value="*">ALL</option>
-										</select> 
+										</select>
 
 										<select name="where" id="where" class="agentpress-taxonomy">
 											<option value="" selected="selected">Where?</option>
