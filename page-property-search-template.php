@@ -25,19 +25,19 @@ get_header(); ?>
 		$listingMin = $_GET['min'];
 		$propertyType = $_GET['type'];
 		$zipcode = $_GET['where'];
-		echo $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $zipcode;
+		echo $saleOrLease .'  '. $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $zipcode;
 ?>
 
 <script>
 	 $(document).ready(function() {
 			 function getSearch(){
 					 var propType = <?php echo '"' . $propertyType . '"'; ?> ;
-					 var listingType = <?php echo $listingType; ?> ;
-			 		 var listingMax = <?php echo $listingMax; ?> ;
-			 		 var listingMin = <?php echo $listingMin; ?> ;
-			 		 var propertyType = <?php echo $propertyType; ?> ;
-			 		 var zipcode = <?php echo $zipcode; ?> ;
-					 var saleOrLease = <?php echo $saleOrLease; ?>;
+					 var listingType = <?php echo '"' . $listingType . '"'; ?> ;
+			 		 var listingMax = <?php echo '"' . $listingMax . '"'; ?> ;
+			 		 var listingMin = <?php echo  '"' . $listingMin . '"'; ?> ;
+			 		 var propertyType = <?php echo '"' . $propertyType . '"'; ?> ;
+			 		 var zipcode = <?php echo $zipcode . '"'; ?> ;
+					 var saleOrLease = <?php echo $saleOrLease . '"'; ?>;
 
 					 $(".propType option").filter(function() {
 							 return $(this).val() == propType;
