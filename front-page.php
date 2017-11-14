@@ -32,8 +32,9 @@ get_header(); ?>
 
 										<select name="saleorlease" id="saleorlease" class="agentpress-taxonomy">
 											<option value="" selected="selected">For Sale or Lease?</option>
-											<option value="sale">Sale</option>
-											<option value="lease">Lease</option>
+											<option value="2">Sale</option>
+											<option value="3">Lease</option>
+											<option value="">Both</option>
 										</select>
 
 										<select name="max" id="max" class="agentpress-taxonomy">
