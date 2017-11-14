@@ -36,8 +36,8 @@ get_header(); ?>
 			 		 var listingMax = <?php echo '"' . $listingMax . '"'; ?> ;
 			 		 var listingMin = <?php echo  '"' . $listingMin . '"'; ?> ;
 			 		 var propertyType = <?php echo '"' . $propertyType . '"'; ?> ;
-			 		 var zipcode = <?php echo $zipcode . '"'; ?> ;
-					 var saleOrLease = <?php echo $saleOrLease . '"'; ?>;
+			 		 var zipcode = <?php echo '"' .  $zipcode . '"'; ?> ;
+					 var saleOrLease = <?php echo '"' .  $saleOrLease . '"'; ?>;
 
 					 $(".propType option").filter(function() {
 							 return $(this).val() == propType;
