@@ -75,7 +75,7 @@ get_header(); ?>
 						price: 1,
 						bedbaths: 1,
 						stypes: 1,
-						label: Search,
+						label: 'Search',
 						titles: 1,
 						rand: Math.random()
 					}
