@@ -20,6 +20,7 @@ get_header(); ?>
 <?php
 		// s=&post_type=listing&max=250k-500k&min=100k-250k&type=apartment&where=60067
 		$listingType = $_GET['post_type'];
+		$saleOrLease = $_GET['saleorlease'];
 		$listingMax = $_GET['max'];
 		$listingMin = $_GET['min'];
 		$propertyType = $_GET['type'];
@@ -36,20 +37,23 @@ get_header(); ?>
 			 		 var listingMin = <?php echo $listingMin; ?> ;
 			 		 var propertyType = <?php echo $propertyType; ?> ;
 			 		 var zipcode = <?php echo $zipcode; ?> ;
+					 var saleOrLease = <?php echo $saleOrLease; ?>;
 
 					 $(".propType option").filter(function() {
 							 return $(this).val() == propType;
 					 }).attr('selected', true);
 
 					 $("select [name='SearchAttrib'] option").filter(function() {
-							 return $(this).val() == propType;
+							 return $(this).val() == saleOrLease;
 					 }).attr('selected', true);
-
 
 
 					 console.log( 'loaded getSearch ');
 			 }
-			 getSearch();
+			 setTimeout(function () {
+			 		getSearch();
+			 }, 400);
+
 		});
 </script>
 
