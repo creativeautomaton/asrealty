@@ -29,7 +29,7 @@ get_header(); ?>
 
  <script>
 		function getSearch(){
-				$('.propType').val( <?php echo $propertyType ?> );
+				$('.propType option').val( <?php echo $propertyType ?> );
 		}
 		getSearch();
  </script>
