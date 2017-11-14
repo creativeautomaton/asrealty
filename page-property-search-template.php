@@ -65,7 +65,7 @@ get_header(); ?>
 					var data;
 					var marisOptions = {
 						id: listing_widget_74379e4db9dfa5385f7f38f7e9463d9a,
-						iden: 15091-4d9c70f6d0,
+						iden: '15091-4d9c70f6d0',
 						AuthKey: e0d7b67499421bf5dd52b3eb0879a1bf,
 						street: 1&,
 						city: 1&,
