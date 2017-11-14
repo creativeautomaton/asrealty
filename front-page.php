@@ -80,7 +80,7 @@ get_header(); ?>
 						// Show the selected frontpage content.
 						if ( have_posts() ) :
 							while ( have_posts() ) : the_post();
-								get_template_part( 'template-parts/page/content', 'front-page' );
+								get_template_part( 'template-parts/page/content', 'none' );
 							endwhile;
 						else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
 							get_template_part( 'template-parts/post/content', 'none' );
@@ -92,7 +92,7 @@ get_header(); ?>
 </div>
 <div class="front-page-2-right widget-area">
 	<section id="text-9" class="widget widget_text">
-		<div class="widget-wrap"> 
+		<div class="widget-wrap">
 			<h3 class="widgettitle widget-title">Contact <?php the_field('name'); ?></h3>
 			<div class="textwidget">
 				<ul class="contact">
