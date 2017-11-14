@@ -91,7 +91,7 @@ get_header(); ?>
 					var settings = {
 						  "async": true,
 						  "crossDomain": true,
-						  "url": "http://www.marissearch.com/?id=listing_widget_bf47ad079b9c30c0ca44a242f57c2752&iden=13330-51a229e068&AuthKey=6585fb201c4401b2f009611313a6f0d3&street=1&county=1&city=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&state=1&rand='1'",
+						  "url": "http://www.marissearch.com/?id=listing_widget_bf47ad079b9c30c0ca44a242f57c2752&iden=13330-51a229e068&AuthKey=6585fb201c4401b2f009611313a6f0d3&street=1&county=1&city=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&state=1&rand=1",
 						  "method": "GET",
 						  "headers": {
 						    "cache-control": "no-cache",
