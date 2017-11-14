@@ -33,8 +33,8 @@ get_header(); ?>
 					 var propType = 'con';
 					 $(".propType option").filter(function() {
 							 //may want to use $.trim in here
-							 return $(this).text() == propType;
-					 }).prop('selected', true);
+							 return $(this).val() == propType;
+					 }).attr('selected', true);
 
 					 console.log( 'loaded getSearch ');
 			 }
