@@ -27,6 +27,13 @@ get_header(); ?>
 		echo $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $zipcode;
 ?>
 
+ <script>
+		function getSearch(){
+				$('.propType').val( <?php echo $listingType ?> );
+		}
+		getSearch();
+ </script>
+
 		<section class="hidden">
 					 <!-- <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" /> -->
 			<!--  Maris script -->
