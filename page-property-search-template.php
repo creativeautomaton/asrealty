@@ -29,8 +29,7 @@ get_header(); ?>
 
  <script>
 		function getSearch(){
-				var propType = <?php //echo $propertyType; ?> 'con';
-				var text1 = 'Two';
+				var propType = 'con';
 				$("#listing_widget_74379e4db9dfa5385f7f38f7e9463d9a9f6670d31c_propType option").filter(function() {
 				    //may want to use $.trim in here
 				    return $(this).text() == propType;
@@ -38,7 +37,7 @@ get_header(); ?>
 
 				console.log( 'loaded getSearch ');
 		}
-
+		getSearch();
  </script>
 
 		<section class="hidden">
@@ -50,7 +49,7 @@ get_header(); ?>
 					wc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.marissearch.com/?id=listing_widget_74379e4db9dfa5385f7f38f7e9463d9a&iden=15091-4d9c70f6d0&AuthKey=e0d7b67499421bf5dd52b3eb0879a1bf&street=1&city=1&county=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&rand='+Math.random();
 					wc.setAttribute('async','true'); document.documentElement.firstChild.appendChild(wc);
 			})();
-					getSearch();
+
 			</script>
 
 		</section>
