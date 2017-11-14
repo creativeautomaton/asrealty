@@ -30,12 +30,6 @@ get_header(); ?>
 
 <script>
 	 $(document).ready(function() {
-		 // document.write('<div id="listing_widget_74379e4db9dfa5385f7f38f7e9463d9a"></div>');
-
-		 // $('#listing_widget_74379e4db9dfa5385f7f38f7e9463d9a').on('load', function() {
-		 // 		getSearch();
-		 // });
-		 console.log('loaded maris search');
 			 function getSearch(){
 					 var propType = <?php echo '"' . $propertyType . '"'; ?> ;
 					 var listingType = <?php echo '"' . $listingType . '"'; ?> ;
@@ -56,14 +50,9 @@ get_header(); ?>
 
 					 console.log( 'loaded getSearch ');
 			 }
-			 (function() {
-					var wc = document.createElement('script');
-					wc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.marissearch.com/?id=listing_widget_74379e4db9dfa5385f7f38f7e9463d9a&iden=15091-4d9c70f6d0&AuthKey=e0d7b67499421bf5dd52b3eb0879a1bf&street=1&city=1&county=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&rand='+Math.random();
-					wc.setAttribute('async','true'); document.documentElement.firstChild.appendChild(wc);
-					getSearch();
-			})();
-
-
+			 setTimeout(function () {
+			 		getSearch();
+			 }, 500);
 
 		});
 </script>
@@ -71,7 +60,15 @@ get_header(); ?>
 
 		<section class="hidden">
 					 <!-- <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" /> -->
-					 <div id="listing_widget_74379e4db9dfa5385f7f38f7e9463d9a"></div>
+			<!--  Maris script -->
+			<script type="text/javascript">
+					document.write('<div id="listing_widget_74379e4db9dfa5385f7f38f7e9463d9a"></div>'); (function() {
+							var wc = document.createElement('script');
+							wc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.marissearch.com/?id=listing_widget_74379e4db9dfa5385f7f38f7e9463d9a&iden=15091-4d9c70f6d0&AuthKey=e0d7b67499421bf5dd52b3eb0879a1bf&street=1&city=1&county=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&rand='+Math.random();
+							wc.setAttribute('async','true'); document.documentElement.firstChild.appendChild(wc);
+					})();
+					console.log('loaded maris search');
+			</script>
 
 		</section>
 
