@@ -4295,3 +4295,11 @@ object {
     margin: 2rem;
     padding: 1rem;
 }
+.contact p {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	padding-bottom: 2rem;
+}
