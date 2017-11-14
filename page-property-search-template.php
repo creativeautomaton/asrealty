@@ -79,10 +79,12 @@ get_header(); ?>
 						titles: 1,
 						rand: Math.random()
 					}
+					var contentType ="application/x-www-form-urlencoded; charset=utf-8";
 						$.ajax({
 							method: "GET",
 							url: "https://www.marissearch.com/?",
-							data: {  marisOptions  }
+							data: {  marisOptions  },
+							contentType: contentType,
 						}).fail(function(err){
 							console.log(err);
 						})
