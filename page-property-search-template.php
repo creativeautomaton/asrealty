@@ -31,7 +31,7 @@ get_header(); ?>
 <script>
 	 $(document).ready(function() {
 			 function getSearch(){
-					 var propType = <?php echo $propertyType; ?> ;
+					 var propType = <?php echo '"' . $propertyType . '"'; ?> ;
 					 var listingType = <?php echo $listingType; ?> ;
 			 		 var listingMax = <?php echo $listingMax; ?> ;
 			 		 var listingMin = <?php echo $listingMin; ?> ;
