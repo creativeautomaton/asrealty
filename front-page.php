@@ -76,9 +76,17 @@ get_header(); ?>
 			<section id="text-8" class="widget widget_text">
 				<div class="widget-wrap">
 					<div class="textwidget">
-						<span class="add-color">ABOUT JENNIFER:</span>
-						 I am enthusiastic. I am passionate. I am tech-savvy. I am friendly. I am responsive. I am  committed to excellence. I am ready to impress you with my service, encourage you with my trustworthiness, and thrill you with my commitment to urgency.
-					 </div>
+						<?php
+						// Show the selected frontpage content.
+						if ( have_posts() ) :
+							while ( have_posts() ) : the_post();
+								get_template_part( 'template-parts/page/content', 'front-page' );
+							endwhile;
+						else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
+							get_template_part( 'template-parts/post/content', 'none' );
+						endif;
+						?>
+						 </div>
 		</div>
 	</section>
 </div>
