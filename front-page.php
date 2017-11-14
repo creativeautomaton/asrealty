@@ -37,7 +37,7 @@ get_header(); ?>
 											<option value="">Both</option>
 										</select>
 
-										<select name="max" id="max" class="agentpress-taxonomy">
+										<select name="priceRange" id="priceRange" class="agentpress-taxonomy">
 											<option value="" selected="selected">How Much (Max-min)?</option>
 											<option value="under-250k">Under 250K</option>
 											<option value="100k-250k">100K-250K</option>
@@ -85,7 +85,7 @@ get_header(); ?>
 											<option value="" selected="selected">Where?</option>
 											<option value="63139">63139</option>
 											<option value="creve coeur">Creve Couer</option>
-											<option value="maryland hieghts">Maryland Heights</option> 
+											<option value="maryland hieghts">Maryland Heights</option>
 									</select>
 
 									<input id="searchsubmit" class="searchsubmit" value="Search Homes" type="submit">

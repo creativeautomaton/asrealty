@@ -21,13 +21,12 @@ get_header(); ?>
 		// s=&post_type=listing&max=250k-500k&min=100k-250k&type=apartment&where=60067
 		$listingType = $_GET['post_type'];
 		$saleOrLease = $_GET['saleorlease'];
-		$listingMax = $_GET['max'];
-		$listingMin = $_GET['min'];
+		$priceRange = $_GET['priceRange'];
 		$propertyType = $_GET['type'];
 		$cityZip = $_GET['where'];
 		$beds = $_GET['MinBeds'];
 		$baths = $_GET['MinBaths'];
-		echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $cityZip;
+		echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $priceRange  .' '. $propertyType .' '. $cityZip;
 ?>
 
 <script>
@@ -35,7 +34,7 @@ get_header(); ?>
 			 function getSearch(){
 					 var propType = <?php echo '"' . $propertyType . '"'; ?> ;
 					 var listingType = <?php echo '"' . $listingType . '"'; ?> ;
-			 		 var listingMax = <?php echo '"' . $listingMax . '"'; ?> ;
+			 		 var priceRange = <?php echo '"' . $priceRange . '"'; ?> ;
 			 		 var listingMin = <?php echo  '"' . $listingMin . '"'; ?> ;
 			 		 var propertyType = <?php echo '"' . $propertyType . '"'; ?> ;
 			 		 var cityZip = <?php echo '"' .  $cityZip . '"'; ?> ;
@@ -48,8 +47,8 @@ get_header(); ?>
 					 $("select[name*='MinBath'] option").filter(function() {  return $(this).val() == baths;  }).attr('selected', true);
 
 
-					 $("input[name*='MinPrice']").val(listingMin);
-					 $("input[name*='MaxPrice']").val(listingMax);
+					 $("input[name*='MinPrice']").val(priceRange);
+					 $("input[name*='MaxPrice']").val(priceRange);
 					 $("input[name*='City']").val(cityZip);
 
 
