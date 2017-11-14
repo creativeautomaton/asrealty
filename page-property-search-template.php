@@ -46,7 +46,8 @@ get_header(); ?>
 					 $("select[name*='SearchAttrib'] option").filter(function() {
 							 return $(this).val() == saleOrLease;
 					 }).attr('selected', true);
-
+					 $("input[name*='MinPrice']").val(listingMin);
+					 $("input[name*='MaxPrice']").val(listingMax);
 
 					 console.log( 'loaded getSearch ');
 			 }
