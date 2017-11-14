@@ -63,6 +63,14 @@ get_header(); ?>
 			<!--  Maris script -->
 			<script type="text/javascript">
 					var data;
+
+
+
+					document.write('<div id="listing_widget_74379e4db9dfa5385f7f38f7e9463d9a"></div>'); (function() {
+							var wc = document.createElement('script');
+							wc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.marissearch.com/?id=listing_widget_74379e4db9dfa5385f7f38f7e9463d9a&iden=15091-4d9c70f6d0&AuthKey=e0d7b67499421bf5dd52b3eb0879a1bf&street=1&city=1&county=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&rand='+Math.random();
+							wc.setAttribute('async','true'); document.documentElement.firstChild.appendChild(wc);
+					})();
 					var marisOptions = {
 						id: 'listing_widget_74379e4db9dfa5385f7f38f7e9463d9a',
 						iden: '15091-4d9c70f6d0',
@@ -83,22 +91,14 @@ get_header(); ?>
 					var contentType ="Access-Control-Allow-Origin";
 						$.ajax({
 							method: "GET",
-							url: "https://www.marissearch.com/?",
-							crossDomain: true,
-							data: { marisOptions  }
+							url: 'www.marissearch.com/?id=listing_widget_74379e4db9dfa5385f7f38f7e9463d9a&iden=15091-4d9c70f6d0&AuthKey=e0d7b67499421bf5dd52b3eb0879a1bf&street=1&city=1&county=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&rand='+Math.random(),
+							crossDomain: true
 						}).fail(function(err){
 							console.log(err);
 						})
 						.done(function( data ) {
 							  console.log(data);
 					 }) ;
-
-
-					document.write('<div id="listing_widget_74379e4db9dfa5385f7f38f7e9463d9a"></div>'); (function() {
-					var wc = document.createElement('script');
-					wc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.marissearch.com/?id=listing_widget_74379e4db9dfa5385f7f38f7e9463d9a&iden=15091-4d9c70f6d0&AuthKey=e0d7b67499421bf5dd52b3eb0879a1bf&street=1&city=1&county=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&rand='+Math.random();
-					wc.setAttribute('async','true'); document.documentElement.firstChild.appendChild(wc);
-			})();
 					console.log('loaded maris search');
 			</script>
 
