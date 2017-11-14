@@ -79,8 +79,8 @@ get_header(); ?>
 						titles: 1,
 						rand: Math.random()
 					}
-					console.log( marisOptions.toString() );
-					var contentType ="application/x-www-form-urlencoded; charset=utf-8";
+					console.log( marisOptions );
+					var contentType ="Access-Control-Allow-Origin";
 						$.ajax({
 							method: "GET",
 							url: "https://www.marissearch.com/?",
