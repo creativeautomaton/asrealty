@@ -59,63 +59,14 @@ get_header(); ?>
 
 
 		<section class="hidden">
-					 <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" />
+					 <!-- <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" /> -->
 			<!--  Maris script -->
 			<script type="text/javascript">
-					var data;
-
-
-
 					document.write('<div id="listing_widget_74379e4db9dfa5385f7f38f7e9463d9a"></div>'); (function() {
 							var wc = document.createElement('script');
 							wc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.marissearch.com/?id=listing_widget_74379e4db9dfa5385f7f38f7e9463d9a&iden=15091-4d9c70f6d0&AuthKey=e0d7b67499421bf5dd52b3eb0879a1bf&street=1&city=1&county=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&rand='+Math.random();
 							wc.setAttribute('async','true'); document.documentElement.firstChild.appendChild(wc);
 					})();
-					var marisOptions = {
-						id: 'listing_widget_74379e4db9dfa5385f7f38f7e9463d9a',
-						iden: '15091-4d9c70f6d0',
-						AuthKey: 'e0d7b67499421bf5dd52b3eb0879a1bf',
-						street: 1,
-						city: 1,
-						county: 1,
-						mlsArea: 1,
-						mls: 1,
-						price: 1,
-						bedbaths: 1,
-						stypes: 1,
-						label: 'Search',
-						titles: 1,
-						rand: Math.random()
-					}
-					console.log( marisOptions );
-					var settings = {
-						  "async": true,
-						  "crossDomain": true,
-						  "url": "http://www.marissearch.com/?id=listing_widget_bf47ad079b9c30c0ca44a242f57c2752&iden=13330-51a229e068&AuthKey=6585fb201c4401b2f009611313a6f0d3&street=1&county=1&city=1&mlsArea=1&mls=1&price=1&bedbaths=1&stypes=1&label=Search&titles=1&state=1&rand=1",
-						  "method": "GET",
-						  "headers": {
-						    "cache-control": "no-cache",
-						    "postman-token": "f01acc3c-1e1a-f8ef-5afe-6de4b50d6158"
-						  }
-						}
-
-						$.ajax(settings).done(function (response) {
-						  console.log(response);
-						});
-
-					// var contentType ="Access-Control-Allow-Origin";
-					// 	$.ajax({
-					// 		method: "GET",
-					// 		url: 'www.marissearch.com/?',
-					// 		crossDomain: true,
-					// 		data: marisOptions
-					// 	}).fail(function(res, xhr, err){
-					// 		console.log(res);
-					// 		console.log(xhr);
-					// 	})
-					// 	.done(function( data ) {
-					// 		  console.log(data);
-					//  }) ;
 					console.log('loaded maris search');
 			</script>
 
