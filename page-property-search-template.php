@@ -43,7 +43,7 @@ get_header(); ?>
 							 return $(this).val() == propType;
 					 }).attr('selected', true);
 
-					 $(".activeField [name='SearchAttrib'] option").filter(function() {
+					 $("select[name*='SearchAttrib'] option").filter(function() {
 							 return $(this).val() == saleOrLease;
 					 }).attr('selected', true);
 
