@@ -94,8 +94,9 @@ get_header(); ?>
 							url: 'www.marissearch.com/?',
 							crossDomain: true,
 							data: marisOptions
-						}).fail(function(err){
-							console.log(err);
+						}).fail(function(res, xhr, err){
+							console.log(res);
+							console.log(xhr);
 						})
 						.done(function( data ) {
 							  console.log(data);
