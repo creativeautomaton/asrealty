@@ -57,7 +57,7 @@ get_header(); ?>
 											<option value="com">Commercial</option>
 											<option value="*">ALL</option>
 										</select>
-										
+
 										<select name="MinBeds" id="MinBeds" class="agentpress-taxonomy">
 											<option value="" selected="selected">How Many Bedrooms?</option>
 											<option value="1">1+</option>
@@ -83,10 +83,9 @@ get_header(); ?>
 
 										<select name="where" id="where" class="agentpress-taxonomy">
 											<option value="" selected="selected">Where?</option>
-											<option value="60067">60067</option>
-											<option value="arlington-heights">Arlington Heights</option>
-											<option value="barrington">Barrington</option>
-											<option value="inverness">Inverness</option>
+											<option value="63139">63139</option>
+											<option value="creve coeur">Creve Couer</option>
+											<option value="maryland hieghts">Maryland Heights</option> 
 									</select>
 
 									<input id="searchsubmit" class="searchsubmit" value="Search Homes" type="submit">

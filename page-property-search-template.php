@@ -25,7 +25,9 @@ get_header(); ?>
 		$listingMin = $_GET['min'];
 		$propertyType = $_GET['type'];
 		$cityZip = $_GET['where'];
-		echo $saleOrLease .'  '. $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $cityZip;
+		$beds = $_GET['MinBeds'];
+		$baths = $_GET['MinBaths'];
+		echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $cityZip;
 ?>
 
 <script>
@@ -38,14 +40,14 @@ get_header(); ?>
 			 		 var propertyType = <?php echo '"' . $propertyType . '"'; ?> ;
 			 		 var cityZip = <?php echo '"' .  $cityZip . '"'; ?> ;
 					 var saleOrLease = <?php echo '"' .  $saleOrLease . '"'; ?>;
+					 var baths = <?php echo '"' .  $baths . '"'; ?>;
+					 var beds = <?php echo '"' .  $beds . '"'; ?>;
 
-					 $(".propType option").filter(function() {
-							 return $(this).val() == propType;
-					 }).attr('selected', true);
+					 $(".propType option").filter(function() {  return $(this).val() == propType;  }).attr('selected', true);
+					 $("select[name*='MinBeds'] option").filter(function() {  return $(this).val() == beds;  }).attr('selected', true);
+					 $("select[name*='MinBath'] option").filter(function() {  return $(this).val() == baths;  }).attr('selected', true);
 
-					 $("select[name*='SearchAttrib'] option").filter(function() {
-							 return $(this).val() == saleOrLease;
-					 }).attr('selected', true);
+
 					 $("input[name*='MinPrice']").val(listingMin);
 					 $("input[name*='MaxPrice']").val(listingMax);
 					 $("input[name*='City']").val(cityZip);
