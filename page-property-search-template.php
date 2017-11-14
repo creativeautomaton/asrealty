@@ -17,7 +17,15 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+<?php
+		// s=&post_type=listing&max=250k-500k&min=100k-250k&type=apartment&where=60067
+		$listingType = $_GET['post_type'];
+		$listingMax = $_GET['max'];
+		$listingMin = $_GET['min'];
+		$propertyType = $_GET['type'];
+		$zipcode = $_GET['where'];
+		echo $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $zipcode;
+?>
 
 		<section class="hidden">
 					 <!-- <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" /> -->
