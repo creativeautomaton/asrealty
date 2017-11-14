@@ -34,8 +34,7 @@ get_header(); ?>
 			 function getSearch(){
 					 var propType = <?php echo '"' . $propertyType . '"'; ?> ;
 					 var listingType = <?php echo '"' . $listingType . '"'; ?> ;
-			 		 var priceRange = <?php echo '"' . $priceRange . '"'; ?> ;
-			 		 var listingMin = <?php echo  '"' . $listingMin . '"'; ?> ;
+			 		 var priceRange = <?php echo '"' . $priceRange . '"'; ?> ; 
 			 		 var propertyType = <?php echo '"' . $propertyType . '"'; ?> ;
 			 		 var cityZip = <?php echo '"' .  $cityZip . '"'; ?> ;
 					 var saleOrLease = <?php echo '"' .  $saleOrLease . '"'; ?>;
