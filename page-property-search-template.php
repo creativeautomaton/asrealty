@@ -36,7 +36,7 @@ get_header(); ?>
 				    return $(this).text() == propType;
 				}).prop('selected', true);
 
-				console.log(<?php //echo $propertyType; ?>);
+				console.log( 'loaded getSearch ');
 		}
 
  </script>
