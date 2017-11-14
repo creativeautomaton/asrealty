@@ -29,10 +29,10 @@ get_header(); ?>
 
  <script>
 		function getSearch(){
-				var propType = <?php echo $propertyType; ?>;
+				var propType = <?php //echo $propertyType; ?> con;
 				$('.propType option').each(function() { this.selected = (this.text == propType); });
 
-				console.log(<?php echo $propertyType; ?>);
+				console.log(<?php //echo $propertyType; ?>);
 		}
 		getSearch();
  </script>
