@@ -83,7 +83,7 @@ get_header(); ?>
 						$.ajax({
 							method: "GET",
 							url: "https://www.marissearch.com/?",
-							data: {  marisOptions  },
+							data: {  marisOptions[0]  },
 							contentType: contentType,
 						}).fail(function(err){
 							console.log(err);
