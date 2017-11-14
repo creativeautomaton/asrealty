@@ -31,7 +31,7 @@ get_header(); ?>
 	 $(document).ready(function() {
 			 function getSearch(){
 					 var propType = 'con';
-					 $("#listing_widget_74379e4db9dfa5385f7f38f7e9463d9a9f6670d31c_propType option").filter(function() {
+					 $(".propType option").filter(function() {
 							 //may want to use $.trim in here
 							 return $(this).text() == propType;
 					 }).prop('selected', true);
