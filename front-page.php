@@ -28,7 +28,8 @@ get_header(); ?>
 							<form role="search" method="get" id="searchform" action="/property-search/">
 
 								<input value="" name="s" type="hidden">
-									<input value="listing" name="post_type" type="hidden">
+									  <input value="listing" name="post_type" type="hidden">
+
 										<select name="max" id="max" class="agentpress-taxonomy">
 											<option value="" selected="selected">How Much (Max)?</option>
 											<option value="500k-750k">500K-750K</option>
@@ -50,9 +51,15 @@ get_header(); ?>
 
 										<select name="type" id="type" class="agentpress-taxonomy">
 											<option value="" selected="selected">What Type of Home?</option>
-											<option value="single-family-home">Single Family Home</option>
-											<option value="apartment">Apartment</option>
-										</select>
+											<option value="res">Single Family</option>
+											<option value="con">Condos / Villas</option>
+											<option value="acr">Acreage / Farm</option>
+											<option value="lot">Lots / Land</option>
+											<option value="mf2,mf5">Multi Family</option>
+											<option value="new">New Construction</option>
+											<option value="com">Commercial</option>
+											<option value="*">ALL</option>
+										</select> 
 
 										<select name="where" id="where" class="agentpress-taxonomy">
 											<option value="" selected="selected">Where?</option>
@@ -79,7 +86,7 @@ get_header(); ?>
 						<?php
 						// Show the selected frontpage content.
 						if ( have_posts() ) :
-							while ( have_posts() ) : the_post(); 
+							while ( have_posts() ) : the_post();
 								the_content();
 							endwhile;
 						else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
