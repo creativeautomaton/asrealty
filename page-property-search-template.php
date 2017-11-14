@@ -34,7 +34,7 @@ get_header(); ?>
 			 function getSearch(){
 					 var propType = <?php echo '"' . $propertyType . '"'; ?> ;
 					 var listingType = <?php echo '"' . $listingType . '"'; ?> ;
-			 		 var priceRange = <?php echo '"' . $priceRange . '"'; ?> ; 
+			 		 var priceRange = <?php echo '"' . $priceRange . '"'; ?> ;
 			 		 var propertyType = <?php echo '"' . $propertyType . '"'; ?> ;
 			 		 var cityZip = <?php echo '"' .  $cityZip . '"'; ?> ;
 					 var saleOrLease = <?php echo '"' .  $saleOrLease . '"'; ?>;
@@ -44,6 +44,9 @@ get_header(); ?>
 					 $(".propType option").filter(function() {  return $(this).val() == propType;  }).attr('selected', true);
 					 $("select[name*='MinBeds'] option").filter(function() {  return $(this).val() == beds;  }).attr('selected', true);
 					 $("select[name*='MinBath'] option").filter(function() {  return $(this).val() == baths;  }).attr('selected', true);
+
+					 priceRange = priceRange.split('');
+					 console.log(priceRange);
 
 
 					 $("input[name*='MinPrice']").val(priceRange);
