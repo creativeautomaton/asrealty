@@ -43,7 +43,7 @@ get_header(); ?>
 							 return $(this).val() == propType;
 					 }).attr('selected', true);
 
-					 $("select [name='SearchAttrib'] option").filter(function() {
+					 $("#listing_widget_74379e4db9dfa5385f7f38f7e9463d9ae07a192c52_searchType option").filter(function() {
 							 return $(this).val() == saleOrLease;
 					 }).attr('selected', true);
 
