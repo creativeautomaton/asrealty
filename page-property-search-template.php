@@ -59,7 +59,7 @@ get_header(); ?>
 
 
 		<section class="hidden">
-					 <!-- <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" /> -->
+					 <link type="text/css" rel="stylesheet" href="http://www.marissearch.com/basic.css" />
 			<!--  Maris script -->
 			<script type="text/javascript">
 					document.write('<div id="listing_widget_74379e4db9dfa5385f7f38f7e9463d9a"></div>'); (function() {
