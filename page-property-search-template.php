@@ -24,8 +24,8 @@ get_header(); ?>
 		$listingMax = $_GET['max'];
 		$listingMin = $_GET['min'];
 		$propertyType = $_GET['type'];
-		$zipcode = $_GET['where'];
-		echo $saleOrLease .'  '. $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $zipcode;
+		$cityZip = $_GET['where'];
+		echo $saleOrLease .'  '. $listingType .'  '. $listingMax .' '. $listingMin .' '. $propertyType .' '. $cityZip;
 ?>
 
 <script>
@@ -36,7 +36,7 @@ get_header(); ?>
 			 		 var listingMax = <?php echo '"' . $listingMax . '"'; ?> ;
 			 		 var listingMin = <?php echo  '"' . $listingMin . '"'; ?> ;
 			 		 var propertyType = <?php echo '"' . $propertyType . '"'; ?> ;
-			 		 var zipcode = <?php echo '"' .  $zipcode . '"'; ?> ;
+			 		 var cityZip = <?php echo '"' .  $cityZip . '"'; ?> ;
 					 var saleOrLease = <?php echo '"' .  $saleOrLease . '"'; ?>;
 
 					 $(".propType option").filter(function() {
@@ -48,6 +48,8 @@ get_header(); ?>
 					 }).attr('selected', true);
 					 $("input[name*='MinPrice']").val(listingMin);
 					 $("input[name*='MaxPrice']").val(listingMax);
+					 $("input[name*='City']").val(cityZip);
+
 
 					 console.log( 'loaded getSearch ');
 			 }
