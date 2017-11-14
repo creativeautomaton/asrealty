@@ -38,22 +38,12 @@ get_header(); ?>
 										</select>
 
 										<select name="max" id="max" class="agentpress-taxonomy">
-											<option value="" selected="selected">How Much (Max)?</option>
-											<option value="500k-750k">500K-750K</option>
-											<option value="250k-500k">250K-500K</option>
-											<option value="over-750k">Over 750K</option>
+											<option value="" selected="selected">How Much (Max-min)?</option>
 											<option value="under-250k">Under 250K</option>
 											<option value="100k-250k">100K-250K</option>
-											<option value="750k-up">750K &amp; Up</option>
-										</select>
-
-										<select name="min" id="min" class="agentpress-taxonomy">
-											<option value="" selected="selected">How Much (Min)?</option>
-											<option value="250k-500k">250K-500K</option>
-											<option value="100k-250k">100k-250k</option>
-											<option value="over-750k">Over 750K</option>
 											<option value="500k-750k">500K-750K</option>
-											<option value="under-250k">Under 250K</option>
+											<option value="250k-500k">250K-500K</option>
+											<option value="over-750k">Over 750K</option>
 										</select>
 
 										<select name="type" id="type" class="agentpress-taxonomy">
@@ -66,6 +56,29 @@ get_header(); ?>
 											<option value="new">New Construction</option>
 											<option value="com">Commercial</option>
 											<option value="*">ALL</option>
+										</select>
+										
+										<select name="MinBeds" id="MinBeds" class="agentpress-taxonomy">
+											<option value="" selected="selected">How Many Bedrooms?</option>
+											<option value="1">1+</option>
+											<option value="2">2+</option>
+											<option value="3">3+</option>
+											<option value="4">4+</option>
+											<option value="5">5+</option>
+										</select>
+
+										<select name="MinBaths" id="MinBeds" class="agentpress-taxonomy">
+											<option value="" selected="selected">How Many Baths?</option>
+											<option value="1">1+</option>
+											<option value="1.5">1.5+</option>
+											<option value="2">2+</option>
+											<option value="2.5">2.5+</option>
+											<option value="3">3+</option>
+											<option value="3.5">3.5+</option>
+											<option value="4">4+</option>
+											<option value="4.5">4.5+</option>
+											<option value="5">5+</option>
+											<option value="5.5">5.5+</option>
 										</select>
 
 										<select name="where" id="where" class="agentpress-taxonomy">
