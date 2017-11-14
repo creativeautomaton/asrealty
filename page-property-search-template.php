@@ -52,7 +52,7 @@ get_header(); ?>
 			 }
 			 setTimeout(function () {
 			 		getSearch();
-			 }, 2500);
+			 }, 500);
 
 		});
 </script>
