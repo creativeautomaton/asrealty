@@ -83,7 +83,7 @@ get_header(); ?>
 							method: "GET",
 							url: "https://www.marissearch.com/?",
 							data: {  marisOptions  }
-						}).error(function(err){
+						}).fail(function(err){
 							console.log(err);
 						})
 						.done(function( data ) {
