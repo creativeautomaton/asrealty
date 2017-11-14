@@ -85,8 +85,7 @@ get_header(); ?>
 							method: "GET",
 							url: "https://www.marissearch.com/?",
 							crossDomain: true,
-							data: { marisOptions  },
-							contentType: contentType,
+							data: { marisOptions  }
 						}).fail(function(err){
 							console.log(err);
 						})
