@@ -160,14 +160,30 @@ get_header(); ?>
 				</div>
 
 				<div class="one-half">
-					<a class="viewall" href="https://demo.winningagent.com/agent-focused/community/">» View All<span class="screen-reader-text">of the Communities</span></a>
+					<a class="viewall" href="https://demo.winningagent.com/agent-focused/community/">» View All
+						<span class="screen-reader-text">of the Communities</span>
+					</a>
+
+					<?php
+							$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
+							$loop = new WP_Query( $args );
+							while ( $loop->have_posts() ) : $loop->the_post();
+					?>
+							 <h2> <?php the_title(); ?> </h2>
+							 <?php echo '<div class="entry-content">';
+							  the_content();
+							  echo '</div>';
+							endwhile;
+					?>
 				</div>
+
 			</div>
 		</div>
 		</section>
 		</div>
 	</div>
 </div>
+
 
 <div id="front-page-5" class="front-page-5">
 
