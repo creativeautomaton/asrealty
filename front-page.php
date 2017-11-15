@@ -188,7 +188,10 @@ get_header(); ?>
 				?>
 				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
 					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link">
-						<img src="https://demo.winningagent.com/agent-focused/wp-content/uploads/sites/7/2016/02/the-lakelands-1350x540.jpg" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
+						<?php if (has_post_thumbnail( $post->ID ) ): ?>
+						  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+						<img src="<?php echo $image[0]; ?>" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
+						<?php endif; ?>
 					<header class="entry-header">
 						<h4 class="entry-title">
 							<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="<?php the_title(); ?> "><?php the_title(); ?> </a>
