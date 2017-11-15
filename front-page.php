@@ -163,18 +163,6 @@ get_header(); ?>
 					<a class="viewall" href="https://demo.winningagent.com/agent-focused/community/">» View All
 						<span class="screen-reader-text">of the Communities</span>
 					</a>
-
-					<?php
-							$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
-							$loop = new WP_Query( $args );
-							while ( $loop->have_posts() ) : $loop->the_post();
-					?>
-							 <h2> <?php the_title(); ?> </h2>
-							 <?php echo '<div class="entry-content">';
-							  the_content();
-							  echo '</div>';
-							endwhile;
-					?>
 				</div>
 
 			</div>
@@ -192,26 +180,37 @@ get_header(); ?>
 	<div class="widget-area">
 		<section id="featured-community-1" class="widget featured-content featured-community">
 			<div class="widget-wrap">
+
+				<?php
+						$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post();
+				?>
 				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
-					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link"><img src="https://demo.winningagent.com/agent-focused/wp-content/uploads/sites/7/2016/02/the-lakelands-1350x540.jpg" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
+					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link">
+						<img src="https://demo.winningagent.com/agent-focused/wp-content/uploads/sites/7/2016/02/the-lakelands-1350x540.jpg" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
 					<header class="entry-header">
 						<h4 class="entry-title">
-							<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands">The Lakelands</a>
+							<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="<?php the_title(); ?> "><?php the_title(); ?> </a>
 						</h4>
 					</header>
 					<div class="entry-content">
-						<p>This is an example of a community custom post type. It's built right into the Agent Focused Pro theme, ready for you to use to describe all the communities for your client's real estate needs. You could edit this to put information about the communities you feature, so readers know about them. You  ... <a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" class="more-link button"> » Learn More <span class="screen-reader-text">about  The Lakelands</span>
+						<?php the_content(); ?>
+					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" class="more-link button">
+						» Learn More
+						<span class="screen-reader-text">
+							about <?php the_title(); ?>
+						</span>
 						</a>
 					</p>
 				</div>
 			</article>
-
-			<article class="post-512 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-adult-community wap-community-type-family-friendly entry"><a href="https://demo.winningagent.com/agent-focused/community/the-kingswoods/" title="The Kingswoods" class="wap-community-link"><img src="https://demo.winningagent.com/agent-focused/wp-content/uploads/sites/7/2015/11/kingwoods-1-1350x540.jpg" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
-
-				<header class="entry-header">
-					<h4 class="entry-title">
-						<a href="https://demo.winningagent.com/agent-focused/community/the-kingswoods/" title="The Kingswoods">The Kingswoods</a></h4></header><div class="entry-content"><p>This is an example of a community custom post type. It's built right into the Agent Focused Pro theme, ready for you to use to describe all the communities for your client's real estate needs. You could edit this to put information about the communities you feature, so readers know about them. You  ... <a href="https://demo.winningagent.com/agent-focused/community/the-kingswoods/" class="more-link button">» Learn More <span class="screen-reader-text">about  The Kingswoods</span></a></p></div></article><article class="post-605 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-schools entry"><a href="https://demo.winningagent.com/agent-focused/community/the-sprucewoods/" title="The Sprucewoods" class="wap-community-link"><img src="https://demo.winningagent.com/agent-focused/wp-content/uploads/sites/7/2016/02/pixabay-swimming-828795-1600-1350x540.jpg" class="entry-image attachment-wap-community" alt="Home with swimming pool and mountains in background" itemprop="image" height="540" width="1350"></a><header class="entry-header"><h4 class="entry-title"><a href="https://demo.winningagent.com/agent-focused/community/the-sprucewoods/" title="The Sprucewoods">The Sprucewoods</a></h4></header><div class="entry-content"><p>This is an example of a community custom post type. It's built right into the Agent Focused Pro theme, ready for you to use to describe all the communities for your client's real estate needs. You could edit this to put information about the communities you feature, so readers know about them. You  ... <a href="https://demo.winningagent.com/agent-focused/community/the-sprucewoods/" class="more-link button">» Learn More <span class="screen-reader-text">about  The Sprucewoods</span></a></p></div></article></div></section>
-</div></div></div>
+			<?php  endwhile;	?>
+		</div>
+	</section>
+	</div>
+</div>
+</div>
 <div id="front-page-6" class="front-page-6">
 	<div class="wrap">
 		<div class="flexible-widgets widget-area widget-full">
