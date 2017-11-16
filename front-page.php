@@ -185,7 +185,6 @@ get_header(); ?>
 						$loop = new WP_Query( $args );
 						 if ( $loop->have_posts() ) : $loop->the_post(); {
 								while ( have_posts() ) {
-								
 				?>
 				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
 					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link">
@@ -210,10 +209,9 @@ get_header(); ?>
 				</div>
 			</article>
 				<?php
-						endwhile;
-						else :
-							// no rows found
-						endif;
+							
+							} // end while
+						} // end if
 				?>
 		</div>
 	</section>
