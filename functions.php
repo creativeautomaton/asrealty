@@ -312,6 +312,15 @@ add_filter( 'wp_resource_hints', 'twentyseventeen_resource_hints', 10, 2 );
  */
 function twentyseventeen_widgets_init() {
 	register_sidebar( array(
+		'name'          => __( 'Propterty Search Sidebar', 'property_search_sidebar' ),
+		'id'            => 'property_search_sidebar',
+		'description'   => __( 'Adds the search form to an area.', 'property_search_sidebar' ),
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		'before_title'  => ' ',
+		'after_title'   => ' ',
+	) );
+	register_sidebar( array(
 		'name'          => __( 'Blog Sidebar', 'twentyseventeen' ),
 		'id'            => 'sidebar-1',
 		'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'twentyseventeen' ),
