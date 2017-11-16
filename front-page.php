@@ -175,8 +175,7 @@ get_header(); ?>
 
 <div id="front-page-5" class="front-page-5">
 
-	<div class=" ">
-
+	<div class=" "> 
 	<div class="widget-area">
 		<section id="featured-community-1" class="widget featured-content featured-community">
 			<div class="widget-wrap">
@@ -208,7 +207,12 @@ get_header(); ?>
 					</p>
 				</div>
 			</article>
-		<?php  //endwhile;	?>
+				<?php
+						endwhile;
+						else :
+							// no rows found
+						endif;
+				?>
 		</div>
 	</section>
 	</div>
