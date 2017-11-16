@@ -577,6 +577,89 @@ class ProptertySearchWidget extends WP_Widget {
 
 	function widget( $args, $instance ) {
 		// Widget output
+		?>
+							<!--  Search Property Bar  -->
+								<div id="search-bar" class="search-bar">
+
+									<div class="wrap">
+
+									<div class="widget-area">
+										<section id="property-search-6" class="widget property-search">
+											<div class="widget-wrap">
+												<form role="search" method="get" id="searchform" action="/property-search/">
+
+													<input value="" name="s" type="hidden">
+															<input value="listing" name="post_type" type="hidden">
+
+															<select name="saleorlease" id="saleorlease" class="agentpress-taxonomy">
+																<option value="" selected="selected">For Sale or Lease?</option>
+																<option value="2">Sale</option>
+																<option value="3">Lease</option>
+																<option value="">Both</option>
+															</select>
+
+															<select name="priceRange" id="priceRange" class="agentpress-taxonomy">
+																<option value="" selected="selected">How Much (Max-min)?</option>
+																<option value="under-250k">Under 250K</option>
+																<option value="100k-250k">100K-250K</option>
+																<option value="500k-750k">500K-750K</option>
+																<option value="250k-500k">250K-500K</option>
+																<option value="over-750k">Over 750K</option>
+															</select>
+
+															<select name="type" id="type" class="agentpress-taxonomy">
+																<option value="" selected="selected">What Type of Home?</option>
+																<option value="res">Single Family</option>
+																<option value="con">Condos / Villas</option>
+																<option value="acr">Acreage / Farm</option>
+																<option value="lot">Lots / Land</option>
+																<option value="mf2,mf5">Multi Family</option>
+																<option value="new">New Construction</option>
+																<option value="com">Commercial</option>
+																<option value="*">ALL</option>
+															</select>
+
+															<select name="MinBeds" id="MinBeds" class="agentpress-taxonomy">
+																<option value="" selected="selected">How Many Bedrooms?</option>
+																<option value="1">1+</option>
+																<option value="2">2+</option>
+																<option value="3">3+</option>
+																<option value="4">4+</option>
+																<option value="5">5+</option>
+															</select>
+
+															<select name="MinBaths" id="MinBeds" class="agentpress-taxonomy">
+																<option value="" selected="selected">How Many Baths?</option>
+																<option value="1">1+</option>
+																<option value="1.5">1.5+</option>
+																<option value="2">2+</option>
+																<option value="2.5">2.5+</option>
+																<option value="3">3+</option>
+																<option value="3.5">3.5+</option>
+																<option value="4">4+</option>
+																<option value="4.5">4.5+</option>
+																<option value="5">5+</option>
+																<option value="5.5">5.5+</option>
+															</select>
+
+															<select name="where" id="where" class="agentpress-taxonomy">
+																<option value="" selected="selected">Where?</option>
+																<option value="63139">63139</option>
+																<option value="creve coeur">Creve Couer</option>
+																<option value="maryland hieghts">Maryland Heights</option>
+														</select>
+
+														<input id="searchsubmit" class="searchsubmit" value="Search Homes" type="submit">
+												<div class="clear"></div>
+											</form>
+										</div>
+									</section>
+							</div>
+						</div>
+					</div>
+					<!--  Search Property Bar  -->
+
+		<?php
 	}
 
 	function update( $new_instance, $old_instance ) {
