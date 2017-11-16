@@ -181,13 +181,13 @@ get_header(); ?>
 			<div class="widget-wrap">
 
 				<?php
-						// $args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
-						// $loop = new WP_Query( $args );
+						$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
+						$loop = new WP_Query( $args );
 						//  // if ( $loop->have_posts() ) :
-						// 		while (  $loop->have_posts() ) : $loop->the_post();
+								while (  $loop->have_posts() ) : $loop->the_post();
 				?>
 
-				<!-- <article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
+				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
 					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link">
 						<?php if (has_post_thumbnail( $post->ID ) ): ?>
 						  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
@@ -208,9 +208,10 @@ get_header(); ?>
 						</a>
 					</p>
 				</div>
-			</article> -->
+			</article>
 				<?php
-					  // endwhile;
+					  endwhile;
+						else :
 						// endif;
 			?>
 		</div>
