@@ -565,3 +565,31 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+
+//  Proptery search widget
+class ProptertySearchWidget extends WP_Widget {
+
+	function __construct() {
+		// Instantiate the parent object
+		parent::__construct( false, 'Property Search Widget' );
+	}
+
+	function widget( $args, $instance ) {
+		// Widget output
+	}
+
+	function update( $new_instance, $old_instance ) {
+		// Save widget options
+	}
+
+	function form( $instance ) {
+		// Output admin widget options form
+	}
+}
+
+function myplugin_register_widgets() {
+	register_widget( 'ProptertySearchWidget' );
+}
+
+add_action( 'widgets_init', 'myplugin_register_widgets' );

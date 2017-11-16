@@ -17,7 +17,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-
+		<!--  Search Property Bar  -->
 			<div id="search-bar" class="search-bar">
 
 				<div class="wrap">
@@ -96,6 +96,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<!--  Search Property Bar  -->
 
 <div id="front-page-2" class="front-page-2">
 		<div class="wrap"><div class="front-page-2-left widget-area">
