@@ -175,7 +175,7 @@ get_header(); ?>
 
 <div id="front-page-5" class="front-page-5">
 
-	<div class=" "> 
+	<div class=" ">
 	<div class="widget-area">
 		<section id="featured-community-1" class="widget featured-content featured-community">
 			<div class="widget-wrap">
@@ -183,7 +183,7 @@ get_header(); ?>
 				<?php
 						$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
 						$loop = new WP_Query( $args );
-						while ( $loop->have_posts() ) : $loop->the_post();
+						 if  ( $loop->have_posts() ) : $loop->the_post();
 				?>
 				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
 					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link">
