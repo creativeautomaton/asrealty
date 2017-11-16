@@ -73,8 +73,8 @@
 
 			<?php wp_nav_menu( array(
 				'menu'  => 'Main Menu',
-				'id' => 'menu-header-menu',
-				'class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
+				'menu_id' => 'menu-header-menu',
+				'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
 		 	) );  ?>
 
 </div>
