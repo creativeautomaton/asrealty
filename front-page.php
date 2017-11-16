@@ -17,7 +17,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		
+			<?php  dynamic_sidebar( 'sidebar-1' ); ?>
 
 <div id="front-page-2" class="front-page-2">
 		<div class="wrap"><div class="front-page-2-left widget-area">
