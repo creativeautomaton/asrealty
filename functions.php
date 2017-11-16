@@ -567,6 +567,14 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 
+// Register Sidebars
+function property_search_sidebar() {
+
+}
+add_action( 'widgets_init', 'property_search_sidebar' );
+
+
+
 //  Proptery search widget
 class ProptertySearchWidget extends WP_Widget {
 
