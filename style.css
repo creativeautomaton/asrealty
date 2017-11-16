@@ -4282,6 +4282,15 @@ object {
 
 /* Theme Overrides */
 
+/* Nav bar */
+.nav-wrapper{
+	z-index: 9999999;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+ 
+
 .search-bar{ position: relative; z-index: 2;}
 .listingSearchWidgetContainer .SearchWidget {
     width: 100vw !important;
