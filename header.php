@@ -71,13 +71,11 @@
 		<h2 class="screen-reader-text">Main navigation</h2>
 			<button class="menu-toggle nav-primary" aria-expanded="false" aria-pressed="false" role="button" id="mobile-genesis-nav-primary">Menu</button>
 
-			<?php
-						wp_nav_menu( array(
-						'menu'           => 'Main Menu', // Do not fall back to first non-empty menu.
-						// 'theme_location' => '__no_such_location'
-						'fallback_cb'    => false // Do not fall back to wp_page_menu()
-					) );
-			 ?>
+			<?php wp_nav_menu( array(
+				'menu'  => 'Main Menu',
+				'id' => 'menu-header-menu',
+				'class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
+		 	) );  ?>
 
 </div>
 
