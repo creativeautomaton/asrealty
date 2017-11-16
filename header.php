@@ -71,12 +71,13 @@
 		<h2 class="screen-reader-text">Main navigation</h2>
 			<button class="menu-toggle nav-primary" aria-expanded="false" aria-pressed="false" role="button" id="mobile-genesis-nav-primary">Menu</button>
 
+  <nav class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation" style="">
 			<?php wp_nav_menu( array(
 				'menu'  => 'Main Menu',
 				'menu_id' => 'menu-header-menu',
 				'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
 		 	) );  ?>
-
+		</nav>
 </div>
 
 </header>
