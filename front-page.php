@@ -183,8 +183,8 @@ get_header(); ?>
 				<?php
 						$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
 						$loop = new WP_Query( $args );
-						 if ( $loop->have_posts() ) : $loop->the_post(); {
-								while ( have_posts() ) {
+						 if ( have_posts($loop) ) : the_post($loop); {
+								while ( have_posts($loop) ) {
 				?>
 				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
 					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link">
@@ -209,7 +209,7 @@ get_header(); ?>
 				</div>
 			</article>
 				<?php
-							
+
 							} // end while
 						} // end if
 				?>
