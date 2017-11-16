@@ -12,6 +12,64 @@
 
 ?>
 
+
+<article class="post-447 post type-post status-publish format-standard has-post-thumbnail category-category-1 tag-images-left entry" itemscope="" itemtype="https://schema.org/CreativeWork">
+			<header class="entry-header">
+						<h2 class="entry-title" itemprop="headline">
+							<a href="https://demo.winningagent.com/agent-focused/image-aligned-left/" rel="bookmark">Sample Post With Image Aligned Left</a>
+						</h2>
+						<p class="entry-meta">
+							<time class="entry-time" itemprop="datePublished" datetime="2013-09-01T01:57:05+00:00">September 1, 2013</time>
+							By <span class="entry-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+								<a href="https://demo.winningagent.com/agent-focused/author/agent/" class="entry-author-link" itemprop="url" rel="author">
+									<span class="entry-author-name" itemprop="name">Jennifer</span>
+								</a>
+							</span>
+						</p>
+		</header>
+
+		<div class="entry-content" itemprop="text">
+					<a class="entry-image-link" href="https://demo.winningagent.com/agent-focused/image-aligned-left/" aria-hidden="true"><img src="https://demo.winningagent.com/agent-focused/wp-content/uploads/sites/7/2013/09/Sidecar_Business-04-1350-900x450.jpg" class=" post-image entry-image" alt="Sample Post With Image Aligned Left" itemprop="image" height="450" width="900"></a>
+					<p>
+						This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
+
+						  This is an example of a WordPress post, you could edit this to put information about yourself or your  ... <a href="https://demo.winningagent.com/agent-focused/image-aligned-left/" class="more-link">
+							» Learn More
+					<span class="screen-reader-text">about  Sample Post With Image Aligned Left</span>
+				</a>
+				</p>
+
+		<meta itemprop="dateModified" content="2016-05-18T21:28:33+00:00">
+		<meta itemprop="mainEntityOfPage" content="https://demo.winningagent.com/agent-focused/image-aligned-left/">
+		</div>
+
+		<footer class="entry-footer">
+			<p class="entry-meta">
+				<span class="entry-categories">Filed Under:
+					<a href="https://demo.winningagent.com/agent-focused/category-1/" rel="category tag">Category #1</a>
+				</span>
+				<span class="entry-tags">Tagged With:
+					<a href="https://demo.winningagent.com/agent-focused/tag/images-left/" rel="tag">Images Left</a>
+				</span>
+			</p>
+		</footer>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	if ( is_sticky() && is_home() ) :
