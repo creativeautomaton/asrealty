@@ -183,8 +183,8 @@ get_header(); ?>
 				<?php
 						$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
 						$loop = new WP_Query( $args );
-						 if ( $loop->have_posts() ) : $loop->the_post();
-						 // while ($loop->have_posts()) : $loop->the_post();
+						 if ( $loop->have_posts() ) :
+								while (  $loop->have_posts() ) : $loop->the_post();
 				?>
 
 				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
@@ -209,9 +209,9 @@ get_header(); ?>
 					</p>
 				</div>
 			</article>
-				<?php
-					endif;
-					// endwhile; 
+				<?php 
+					  endwhile;
+						endif;
 			?>
 		</div>
 	</section>
