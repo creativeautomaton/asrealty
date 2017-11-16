@@ -183,7 +183,7 @@ get_header(); ?>
 				<?php
 						$args = array( 'post_type' => 'communities', 'posts_per_page' => 4 );
 						$loop = new WP_Query( $args );
-						 if ( $loop->have_posts() ) :
+						 // if ( $loop->have_posts() ) :
 								while (  $loop->have_posts() ) : $loop->the_post();
 				?>
 
@@ -209,9 +209,9 @@ get_header(); ?>
 					</p>
 				</div>
 			</article>
-				<?php 
+				<?php
 					  endwhile;
-						endif;
+						// endif;
 			?>
 		</div>
 	</section>
