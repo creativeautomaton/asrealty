@@ -207,7 +207,8 @@ get_header(); ?>
 						</a>
 					</p>
 				</div>
-			</article> 
+			</article>
+		<?php  endwhile;	endif;?>
 		</div>
 	</section>
 	</div>
