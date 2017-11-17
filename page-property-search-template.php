@@ -64,7 +64,7 @@ get_header(); ?>
 			 var listingsArray = [];
 			 $('.propSearchBtns').on('click', function(){
 				 $('.listing_block').each( function(propInfo){
-					 		var image =  $('.beds-baths_data').text();
+					 		var image =  $('.listing_photo img').attr('src');
 							var mls =  $('.mls_data').text();
 							var prop_type_data =  $('.prop-type_data').text();
 							var price_data =  $('.price_data').text();
@@ -75,7 +75,7 @@ get_header(); ?>
 							var beds_baths_data =  $('.beds-baths_data').text();
 							var sqft_data =  $('.sqft_data').text();
 
-							return propInfo;
+						  listingsArray.push(image,mls,prop_type_data,price_data);
 
 				 });
 				 	console.log(propInfo);
