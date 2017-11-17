@@ -19,25 +19,16 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">
 
-				<?php
-				get_template_part( 'template-parts/footer/footer', 'widgets' );
+				<?php get_template_part( 'template-parts/footer/footer', 'widgets' );?>
+					 
+						<?php wp_nav_menu( array(
+							'menu'  => 'Footer',
+							'menu_id' => 'menu-header-menu',
+							'depth'          => 1 ,
+							'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
+						) );  ?>
 
-				if ( has_nav_menu( 'Footer' ) ) : ?>
-					<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?>">
-						<?php
-							wp_nav_menu( array(
-								'menu' => 'Footer',
-								'menu_class'     => 'social-links-menu',
-								'depth'          => 1,
-								'link_before'    => '<span class="screen-reader-text">',
-								'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
-							) );
-						?>
-					</nav><!-- .social-navigation -->
-				<?php endif;
-
-				get_template_part( 'template-parts/footer/site', 'info' );
-				?>
+				<?php 	get_template_part( 'template-parts/footer/site', 'info' ); ?>
 
 			     <p>
 						 Copyright ©&nbsp;2017 · <a href="/" target="_blank"> Arling and Swyers Group</a> by <a href="http://www.creativeautomaton.com" target="_blank">creative Automaton</a>
