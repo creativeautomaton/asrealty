@@ -95,7 +95,7 @@ get_header(); ?>
 						 setTimeout(function () {
 								 for (var i = 0; i < listingsArray.length; i++) {
 									 var listingBlockMLS = 'listing_block_'+ listingsArray[i].mls;
-									  realoms_show_listing_photos( 'listing_block_'+ listingBlockMLS +, 'listing_photoblock_'+  listingBlockMLS );
+									  realoms_show_listing_photos( 'listing_block_'+ listingBlockMLS +', listing_photoblock_'+ listingBlockMLS );
 								 	  console.log(listingBlockMLS);
 								 }
 						  }, 700);
