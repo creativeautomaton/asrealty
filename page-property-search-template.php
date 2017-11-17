@@ -66,7 +66,7 @@ get_header(); ?>
 				 $('.listing_block').each( function(propInfo){
 					 		var image =  $('.beds-baths_data').text();
 							var mls =  $('.mls_data').text();
-							var prop-type_data =  $('.prop-type_data').text();
+							var prop_type_data =  $('.prop-type_data').text();
 							var price_data =  $('.price_data').text();
 							var area_data =  $('.area_data').text();
 							var address_data =  $('.address_data').text();
