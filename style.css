@@ -4341,18 +4341,18 @@ object {
 }
 
 /* property listing */
-.listingSearchWidgetContainer .SearchWidget {
+/*.listingSearchWidgetContainer .SearchWidget {
     width: 100vw !important;
 		max-width: 800px;
     margin: 0;
     padding: 0;
 		text-align: center;
-}
-.listingSearchWidgetContainer table {
+}*/
+/*.listingSearchWidgetContainer table {
     width: 100vw !important;
     margin: 2rem;
     padding: 1rem;
-}
+}*/
 .listing_block {
 	width: 100%;
 	display: inline-block;
