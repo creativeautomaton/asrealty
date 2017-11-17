@@ -77,8 +77,7 @@ get_header(); ?>
 
 						  listingsArray.push(image,mls,prop_type_data,price_data);
 
-				 });
-				 	console.log(propInfo);
+				 }); 
 				  console.log(listingsArray);
 			 });
 
