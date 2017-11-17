@@ -76,7 +76,7 @@ get_header(); ?>
 											var county_data =  $('.county_data', this).text().trim();
 											var beds_baths_data =  $('.beds-baths_data', this).text().trim();
 											var sqft_data =  $('.sqft_data', this).text().trim();
-
+											$('.listing_more_photos').attr("photos-data", mls);
 
 										 listingsArray.push({
 											 		 'id': i,
@@ -90,6 +90,15 @@ get_header(); ?>
 													 beds_baths_data,
 													 sqft_data
 										 });
+									});
+									$('.listing_more_photos').on('click', function(){
+											 var mls# = $(this).attr(photos-data);
+											 $('#listing_photoblock_' + mls#).each( function(){
+														var image =  $('.listing_photo img', this).attr('src');
+
+														
+														listingsArray.push( 'photos': { image });
+											 });
 									});
 				 		 }, 700);
 						 setTimeout(function () {
