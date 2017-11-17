@@ -61,11 +61,13 @@ get_header(); ?>
 			 		getSearch();
 			 }, 500);
 
+			 var listingsHTML = [];
 			 var listingsArray = [];
 			 $('.propSearchBtns').on('click', function(){
 
 				 $('.listing_block').each( function(i){
-					   console.log( i + ": " + $( this ).html() );
+					   var propHTML = i + ": " + $( this ).html();
+						 listingsHTML.push( propHTML );
 					 		// var image =  $('.listing_photo img').attr('src');
 							// var mls =  $('.mls_data').text();
 							// var prop_type_data =  $('.prop-type_data').text();
@@ -80,7 +82,7 @@ get_header(); ?>
 						  // listingsArray.push( );
 
 				 });
-				  console.log(listingsArray);
+				  console.log(listingsHTML);
 			 });
 
 
