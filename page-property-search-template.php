@@ -78,7 +78,7 @@ get_header(); ?>
 
 
 
-						 listingsArray.push([image, mls, prop_type_data, area_data]);
+						 listingsArray.push({image, mls, prop_type_data, area_data});
 
 				 });
 				  console.log(listingsArray);
