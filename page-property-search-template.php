@@ -64,30 +64,32 @@ get_header(); ?>
 			 var listingsArray = [];
 			 $('.propSearchBtns').on('click', function(){
 
-				 $('.listing_block').each( function(i){
-					 		var image =  $('.listing_photo img', this).attr('src');
-							var mls =  $('.mls_data', this).text().trim();
-							var prop_type_data =  $('.prop-type_data', this).text().trim();
-							var price_data =  $('.price_data', this).text().trim();
-							var area_data =  $('.area_data', this).text().trim();
-							var address_data =  $('.address_data', this).text().trim();
-							var addresscont_data =  $('.addresscont_data', this).text().trim();
-							var county_data =  $('.county_data', this).text().trim();
-							var beds_baths_data =  $('.beds-baths_data', this).text().trim();
-							var sqft_data =  $('.sqft_data', this).text().trim();
+				 setTimeout(function () {
+								 $('.listing_block').each( function(i){
+									 		var image =  $('.listing_photo img', this).attr('src');
+											var mls =  $('.mls_data', this).text().trim();
+											var prop_type_data =  $('.prop-type_data', this).text().trim();
+											var price_data =  $('.price_data', this).text().trim();
+											var area_data =  $('.area_data', this).text().trim();
+											var address_data =  $('.address_data', this).text().trim();
+											var addresscont_data =  $('.addresscont_data', this).text().trim();
+											var county_data =  $('.county_data', this).text().trim();
+											var beds_baths_data =  $('.beds-baths_data', this).text().trim();
+											var sqft_data =  $('.sqft_data', this).text().trim();
 
-						 listingsArray.push({
-							 		 'id': i,
-									 image,
-									 mls,
-									 prop_type_data,
-									 area_data,
-									 address_data,
-									 addresscont_data,
-									 county_data,
-									 beds_baths_data,
-									 sqft_data
-						 });
+										 listingsArray.push({
+											 		 'id': i,
+													 image,
+													 mls,
+													 prop_type_data,
+													 area_data,
+													 address_data,
+													 addresscont_data,
+													 county_data,
+													 beds_baths_data,
+													 sqft_data
+										 });
+						 	 }, 400);
 
 				 });
 				  console.log(listingsArray);
