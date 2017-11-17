@@ -65,7 +65,7 @@ get_header(); ?>
 			 $('.propSearchBtns').on('click', function(){
 
 				 $('.listing_block').each( function(i){
-					   console.log( i + ": " + $( this ).text() );
+					   console.log( i + ": " + $( this ).html() );
 					 		// var image =  $('.listing_photo img').attr('src');
 							// var mls =  $('.mls_data').text();
 							// var prop_type_data =  $('.prop-type_data').text();
