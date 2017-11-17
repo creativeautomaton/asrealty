@@ -4288,8 +4288,10 @@ object {
 	position: absolute;
 	top: 0px;
 	width: 100%;
+	background-color: #566473;
+  height: 50px;
 }
- 
+
 
 .search-bar{ position: relative; z-index: 2;}
 .listingSearchWidgetContainer .SearchWidget {
