@@ -68,16 +68,15 @@ get_header(); ?>
 					 		var image =  $('.listing_photo img', this).attr('src');
 							var mls =  $('.mls_data', this).text();
 							var prop_type_data =  $('.prop-type_data', this).text();
-							var price_data =  $('.price_data').text();
-							var area_data =  $('.area_data').text();
-							var address_data =  $('.address_data').text();
-							var addresscont_data =  $('.addresscont_data').text();
-							var county_data =  $('.county_data').text();
-							var beds_baths_data =  $('.beds-baths_data').text();
-							var sqft_data =  $('.sqft_data').text();
-
-						  var property = { image, mls, prop_type_data, area_data };
-						 listingsArray.push( property);
+							var price_data =  $('.price_data', this).text();
+							var area_data =  $('.area_data', this).text();
+							var address_data =  $('.address_data', this).text();
+							var addresscont_data =  $('.addresscont_data', this).text();
+							var county_data =  $('.county_data', this).text();
+							var beds_baths_data =  $('.beds-baths_data', this).text();
+							var sqft_data =  $('.sqft_data', this).text();
+ 
+						 listingsArray.push( image, mls, prop_type_data, area_data );
 
 				 });
 				  console.log(listingsArray);
