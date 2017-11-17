@@ -62,7 +62,7 @@ get_header(); ?>
 			 }, 500);
 
 			 var listingsArray = [];
-			 $('.propSearchBtns input').on('click', function(){
+			 $('.propSearchBtns').on('click', function(){
 				 $('.listing_block').each( function(){
 							var mls =  $('.mls').text();
 							listingsArray.push(mls);
