@@ -93,7 +93,7 @@ get_header(); ?>
 									});
 									var morePhotosArray = [];
 									$('.listing_more_photos').on('click', function(){
-											 var mlsNum = $('.listing_more_photos').attr('mls');
+											 var mlsNum = $('.listing_more_photos', this).attr('mls');
 											 var largeImg = $('#listing_photoblock_' + mlsNum).attr('photos');
 											 console.log(largeImg);
 
