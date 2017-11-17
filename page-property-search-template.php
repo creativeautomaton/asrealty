@@ -75,8 +75,8 @@ get_header(); ?>
 							var county_data =  $('.county_data', this).text();
 							var beds_baths_data =  $('.beds-baths_data', this).text();
 							var sqft_data =  $('.sqft_data', this).text();
- 
-						 listingsArray.push( image, mls, prop_type_data, area_data );
+
+						 listingsArray.push({ 'property': image, mls, prop_type_data, area_data });
 
 				 });
 				  console.log(listingsArray);
