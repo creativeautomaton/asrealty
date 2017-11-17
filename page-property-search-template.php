@@ -76,7 +76,7 @@ get_header(); ?>
 							var beds_baths_data =  $('.beds-baths_data', this).text();
 							var sqft_data =  $('.sqft_data', this).text();
 
-						 listingsArray.push('property': { image, mls, prop_type_data, area_data });
+						 listingsArray.push(image, mls, prop_type_data, area_data);
 
 				 });
 				  console.log(listingsArray);
