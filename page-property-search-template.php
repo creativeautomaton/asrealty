@@ -20,12 +20,12 @@ get_header(); ?>
 <?php
 		// s=&post_type=listing&max=250k-500k&min=100k-250k&type=apartment&where=60067
 		$listingType =  isset( $_GET['post_type'] ) ;
-		$saleOrLease =  if(isset){ $_GET['saleorlease'] ;
-		$priceRange = if(isset){ $_GET['priceRange'] ;
-		$propertyType = if(isset){ $_GET['type'] ;
-		$cityZip = if(isset){$_GET['where'] ;
-		$beds = if(isset){ $_GET['MinBeds'] ;
-		$baths = if(isset){ $_GET['MinBaths'] ;
+		$saleOrLease =  isset(  $_GET['saleorlease'] );
+		$priceRange = isset( $_GET['priceRange'] );
+		$propertyType = isset( $_GET['type']) ;
+		$cityZip = isset( $_GET['where'] );
+		$beds = isset( $_GET['MinBeds']) ;
+		$baths = isset( $_GET['MinBaths'] );
 		echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $priceRange  .' '. $propertyType .' '. $cityZip;
 ?>
 
