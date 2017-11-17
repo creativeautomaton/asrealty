@@ -4354,12 +4354,11 @@ object {
     padding: 1rem;
 }*/
 .listing_block {
-	width: 100%;
+	  width: 100%;
 		display: inline-block;
 		padding: 0;
 		margin: 0;
 		list-style: none;
-		height: 300px;
 		padding: 1rem;
 		border: 1px solid silver;
 		margin-top: 10px;
@@ -4373,23 +4372,22 @@ object {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 }
-.listingSearchWidgetContainer .listing_block {
-    padding: 5px 10px;
-    border-top: 1px solid #ccc;
-}
 .listingSearchWidgetContainer .listing_photo {
     float: none;
     width: 100%;
+		text-align: center;
 }
 .listingSearchWidgetContainer .listing_photo_wrap{
 	  width: 100%;
 		float: none;
+		text-align: center;
 }
 .listingSearchWidgetContainer .listing_details_wrap {
 	width: 100%;
 	display: block;
 	float: none;
 	max-width: 600px;
+	text-align: center;
 }
 .listing_more_photos_container {
 	position: absolute;
