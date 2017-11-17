@@ -59,7 +59,21 @@
 	<header class="  nav-wrapper" itemscope="" itemtype="https://schema.org/WPHeader"><div class="wrap">
 		<div class="title-area">
 			<p class="site-title" itemprop="headline">
-				<a href="https://demo.winningagent.com/agent-focused/">Agent Focused</a>
+				<div class="site-branding-text">
+					<?php if ( is_front_page() ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php else : ?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php endif; ?>
+
+					<?php
+					$description = get_bloginfo( 'description', 'display' );
+
+					if ( $description || is_customize_preview() ) :
+					?>
+						<p class="site-description"><?php echo $description; ?></p>
+					<?php endif; ?>
+				</div><!-- .site-branding-text -->
 			</p>
 
 			<p class="site-description" itemprop="description">A WordPress Real Estate Theme for the Genesis Framework</p>
