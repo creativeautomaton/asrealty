@@ -92,11 +92,11 @@ get_header(); ?>
 										 });
 									});
 									$('.listing_more_photos').on('click', function(){
-											 var mls# = $(this).attr(photos-data);
-											 $('#listing_photoblock_' + mls#).each( function(){
+											 var mlsNum = $(this).attr(photos-data);
+											 $('#listing_photoblock_' + mlsNum).each( function(){
 														var image =  $('.listing_photo img', this).attr('src');
 
-														
+
 														listingsArray.push( 'photos': { image });
 											 });
 									});
