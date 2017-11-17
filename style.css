@@ -4304,9 +4304,22 @@ object {
 }
 
 
-/* Search button */
+/* Property Search button */
 .search-bar{ position: relative; z-index: 2;}
+.listingSearchWidgetContainer .SearchWidget {
+    width: 100vw !important;
+    margin: 0;
+    padding: 1rem 4rem;
+    text-align: center;
+    display: block;
+}
+.propSearchTypes {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
 
+/* General Search */
 .widget_search {
 	padding: 2rem 3rem;
 }
@@ -4364,5 +4377,23 @@ object {
 }
 .listing_more_photos_container {
 	position: absolute;
+}
 
+/* single post styles */
+.single-featured-image-header {
+	display: flex;
+	align-content: center;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 400px;
+}
+.single-featured-image-header img {
+	display: block;
+	margin: auto;
+	width: 100%;
+	align-content: center;
+	position: absolute;
+	top: -50%;
+	left: 0;
 }
