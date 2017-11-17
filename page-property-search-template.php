@@ -76,7 +76,12 @@ get_header(); ?>
 							var beds_baths_data =  $('.beds-baths_data').text();
 							var sqft_data =  $('.sqft_data').text();
 
-						  listingsArray.push(image);
+						  listingsArray.push({
+								'image': image,
+								'mls': mls, 
+								'prop_type_data': prop_type_data,
+								'price_data': price_data
+							} );
 
 				 });
 				  console.log(listingsArray);
