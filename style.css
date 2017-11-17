@@ -4378,6 +4378,16 @@ object {
 .listing_more_photos_container {
 	position: absolute;
 }
+.listing_page_info{
+    font-size: 16px;
+    padding: 1rem 3rem;
+    display: inline-block;
+    background: #67e1cd;
+    margin: 1rem 2rem;
+}
+
+
+
 
 /* single post styles */
 .single-featured-image-header {
