@@ -4307,8 +4307,11 @@ object {
 /* Search button */
 .search-bar{ position: relative; z-index: 2;}
 
-.search-form .search-submit {
+.widget_search {
+	padding: 2rem 3rem;
+}
 
+.search-form .search-submit {
     bottom: 3px;
     padding: 0.5em 1em;
     position: absolute;
