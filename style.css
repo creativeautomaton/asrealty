@@ -4316,6 +4316,7 @@ object {
 
 .listing_block {
 	width: 100%;
+	display: inline-block;
 }
 .listingSearchWidgetContainer .listing_block {
     padding: 5px 10px;
@@ -4330,4 +4331,8 @@ object {
     padding: 10px;
     background: #eee;
     border: 1px solid #ccc;
+}
+.listing_more_photos_container {
+	position: absolute;
+
 }
