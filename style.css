@@ -4377,6 +4377,10 @@ object {
     width: 100%;
 		text-align: center;
 }
+.listingSearchWidgetContainer .listing_photo img { 
+    min-height: 240px;
+    max-height: 240px;
+}
 .listingSearchWidgetContainer .listing_photo_wrap{
 	  width: 100%;
 		float: none;
