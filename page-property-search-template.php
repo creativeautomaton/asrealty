@@ -94,11 +94,14 @@ get_header(); ?>
 									var morePhotosArray = [];
 									$('.listing_more_photos').on('click', function(){
 											 var mlsNum = $('.listing_more_photos').attr('mls');
-											 $('#listing_photoblock_' + mlsNum).each( function(img){
-														var image =  $('.listing_image_large img', this).attr('src');
-														morePhotosArray.push( image );
-														console.log(morePhotosArray);
-											 });
+											 var largeImg = $('#listing_photoblock_' + mlsNum).attr('photos');
+											 console.log(largeImg);
+
+											 // .each( function(img){
+												// 		var image = $('.listing_image_large img', this).attr('src');
+												// 		morePhotosArray.push( image );
+												// 		console.log(morePhotosArray);
+											 // });
 
 									});
 
