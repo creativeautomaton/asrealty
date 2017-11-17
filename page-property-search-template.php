@@ -95,8 +95,9 @@ get_header(); ?>
 				 		 }, 700);
 
 						 for (var i = 0; i < listingsArray.length; i++) {
-							  realoms_show_listing_photos( 'listing_block_'+ listingsArray[i].mls +, 'listing_photoblock_'+  listingsArray[i].mls );
-						 	  console.log(photos);
+							 var listingBlockMLS = 'listing_block_'+ listingsArray[i].mls;
+							  // realoms_show_listing_photos( 'listing_block_'+ listingsArray[i].mls +, 'listing_photoblock_'+  listingsArray[i].mls );
+						 	  console.log(listingBlockMLS);
 						 }
 
 				  console.log(listingsArray);
