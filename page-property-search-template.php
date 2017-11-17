@@ -77,18 +77,22 @@ get_header(); ?>
 											var beds_baths_data =  $('.beds-baths_data', this).text().trim();
 											var sqft_data =  $('.sqft_data', this).text().trim();
 
-										 listingsArray.push({
-											 		 'id': i,
-													 image,
-													 mls,
-													 prop_type_data,
-													 area_data,
-													 address_data,
-													 addresscont_data,
-													 county_data,
-													 beds_baths_data,
-													 sqft_data
-										 });
+										 realoms_show_listing_photos( 'listing_block_'+ mls +, 'listing_photoblock_'+ mls );
+
+										 // listingsArray.push({
+											//  		 'id': i,
+											// 		 image,
+											// 		 mls,
+											// 		 prop_type_data,
+											// 		 area_data,
+											// 		 address_data,
+											// 		 addresscont_data,
+											// 		 county_data,
+											// 		 beds_baths_data,
+											// 		 sqft_data,
+											// 		 "Photos":
+										 // });
+
 									});
 				 		 }, 700);
 
