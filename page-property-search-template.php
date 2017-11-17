@@ -91,15 +91,16 @@ get_header(); ?>
 													 sqft_data
 										 });
 									});
+									var morePhotosArray = [];
 									$('.listing_more_photos').on('click', function(){
 											 var mlsNum = $(this).attr(photos-data);
 											 $('#listing_photoblock_' + mlsNum).each( function(){
-														var image =  $('.listing_photo img', this).attr('src');
-
-
-														listingsArray.push( 'photos': { image });
+														var image =  $('.listing_image_large img', this).attr('src');
+														morePhotosArray.push( 'photos': { image });
 											 });
+											 console.log(morePhotosArray);
 									});
+
 				 		 }, 700);
 						 setTimeout(function () {
 								 for (var i = 0; i < listingsArray.length; i++) {
