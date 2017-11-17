@@ -26,7 +26,7 @@
 					<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?>">
 						<?php
 							wp_nav_menu( array(
-								'menu' => 'Footer'
+								'menu' => 'Footer',
 								'menu_class'     => 'social-links-menu',
 								'depth'          => 1,
 								'link_before'    => '<span class="screen-reader-text">',
