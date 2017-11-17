@@ -90,7 +90,7 @@ get_header(); ?>
 													 sqft_data
 										 });
 									});
-				 		 }, 400);
+				 		 }, 700);
 
 				  console.log(listingsArray);
 			 });
