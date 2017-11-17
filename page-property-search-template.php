@@ -92,7 +92,7 @@ get_header(); ?>
 													 county_data,
 													 beds_baths_data,
 													 sqft_data,
-													 "Photos":
+													 "photos": photos
 										 });
 									});
 				 		 }, 700);
