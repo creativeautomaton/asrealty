@@ -77,9 +77,10 @@ get_header(); ?>
 											var beds_baths_data =  $('.beds-baths_data', this).text().trim();
 											var sqft_data =  $('.sqft_data', this).text().trim();
 
-											var photos = realoms_show_listing_photos( 'listing_block_15013943', 'listing_photoblock_15013943' );
+											var photos = realoms_show_listing_photos( 'listing_block_'+ mls +, 'listing_photoblock_'+ mls );
+											// realoms_show_listing_photos( 'listing_block_15013943', 'listing_photoblock_15013943' );
 											console.log(photos);
-											// realoms_show_listing_photos( 'listing_block_'+ mls +, 'listing_photoblock_'+ mls );
+											//
 
 										 listingsArray.push({
 											 		 'id': i,
