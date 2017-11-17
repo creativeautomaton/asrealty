@@ -92,8 +92,9 @@ get_header(); ?>
 										 });
 									});
 									var morePhotosArray = [];
+									var mlsNum = $('.listing_more_photos').data(mls);
 									$('.listing_more_photos').on('click', function(){
-											 var mlsNum = $(this).data(mls);
+
 											 $('#listing_photoblock_' + mlsNum).each( function(){
 														var image =  $('.listing_image_large img', this).attr('src');
 														morePhotosArray.push( image );
