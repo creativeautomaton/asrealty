@@ -4393,7 +4393,10 @@ object {
     background: #333;
     color: #fff;
     text-decoration: navajowhite;
-    margin: 2rem;
+    margin: 0rem 2rem 2rem 2rem;
+}
+.listing_back_button:hover {
+	background: #67e1cd;
 }
 
 /* single post styles */
