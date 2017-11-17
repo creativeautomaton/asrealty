@@ -4314,6 +4314,9 @@ object {
 	padding-bottom: 2rem;
 }
 
+.listing_block {
+	width: 100%;
+}
 .listingSearchWidgetContainer .listing_block {
     padding: 5px 10px;
     border-top: 1px solid #ccc;
