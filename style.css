@@ -4387,7 +4387,14 @@ object {
 }
 .listing_search_info { display:  none;}
 
-
+.listing_back_button {
+    float: right;
+    padding: 2rem 3rem;
+    background: #333;
+    color: #fff;
+    text-decoration: navajowhite;
+    margin: 2rem;
+}
 
 /* single post styles */
 .single-featured-image-header {
