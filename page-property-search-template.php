@@ -96,7 +96,7 @@ get_header(); ?>
 											 var mlsNum = $(this).attr(photos-data);
 											 $('#listing_photoblock_' + mlsNum).each( function(){
 														var image =  $('.listing_image_large img', this).attr('src');
-														morePhotosArray.push( 'photos': { image });
+														morePhotosArray.push({'photos':  image });
 											 });
 											 console.log(morePhotosArray);
 									});
