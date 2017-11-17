@@ -89,9 +89,9 @@ get_header(); ?>
 													 beds_baths_data,
 													 sqft_data
 										 });
-						 	 }, 400);
+									});
+				 		 }, 400);
 
-				 });
 				  console.log(listingsArray);
 			 });
 
