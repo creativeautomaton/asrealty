@@ -54,11 +54,22 @@ get_header(); ?>
 					 $("input[name*='City']").val(cityZip);
 
 
+					 console.log(listingsArray);
 					 console.log( 'loaded getSearch ');
 			 }
 			 setTimeout(function () {
 			 		getSearch();
 			 }, 500);
+
+			 var listingsArray = [];
+			 $('').on('click', function(){
+
+			 });
+				 $('.listing_block').each( function(){
+
+							var mls =  $('.mls').text();
+							listingsArray.push(mls);
+				 });
 
 		});
 </script>

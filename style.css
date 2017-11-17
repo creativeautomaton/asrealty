@@ -4353,6 +4353,9 @@ object {
     margin: 2rem;
     padding: 1rem;
 }*/
+.flippable_listing_page{
+	display: inline-block;
+}
 .listing_block {
 	  width: auto;
 		display: inline-block;
