@@ -4323,14 +4323,18 @@ object {
     border-top: 1px solid #ccc;
 }
 .listingSearchWidgetContainer .listing_photo {
-    float: left;
-    width: 250px;
+    float: none;
+    width: 100%;
+}
+.listingSearchWidgetContainer .listing_photo_wrap{
+	float: left;
 }
 .listingSearchWidgetContainer .listing_details_wrap {
-    float: right;
-    padding: 10px;
-    background: #eee;
-    border: 1px solid #ccc;
+	width: 100%;
+	display: block;
+	float: none;
+	max-width: 600px;
+	float: left;
 }
 .listing_more_photos_container {
 	position: absolute;
