@@ -54,7 +54,7 @@ get_header(); ?>
 					 $("input[name*='City']").val(cityZip);
 
 
-					 console.log(listingsArray);
+
 					 console.log( 'loaded getSearch ');
 			 }
 			 setTimeout(function () {
@@ -63,10 +63,11 @@ get_header(); ?>
 
 			 var listingsArray = [];
 			 $('.propSearchBtns input').on('click', function(){
-				 $('.listing_block').each( function(){ 
+				 $('.listing_block').each( function(){
 							var mls =  $('.mls').text();
 							listingsArray.push(mls);
 				 });
+				  console.log(listingsArray);
 			 });
 
 
