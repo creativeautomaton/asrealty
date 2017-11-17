@@ -65,9 +65,9 @@ get_header(); ?>
 			 $('.propSearchBtns').on('click', function(){
 
 				 $('.listing_block').each( function(i){
-					 		var image =  $('.listing_photo img').attr('src');
-							var mls =  $('.mls_data').text();
-							var prop_type_data =  $('.prop-type_data').text();
+					 		var image =  $('.listing_photo img', this).attr('src');
+							var mls =  $('.mls_data', this).text();
+							var prop_type_data =  $('.prop-type_data', this).text();
 							var price_data =  $('.price_data').text();
 							var area_data =  $('.area_data').text();
 							var address_data =  $('.address_data').text();
