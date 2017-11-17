@@ -18,6 +18,7 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">
+
 				<?php
 				get_template_part( 'template-parts/footer/footer', 'widgets' );
 
@@ -37,6 +38,12 @@
 
 				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
+
+			     <p>
+						 Copyright ©&nbsp;2017 · <a href="/" target="_blank"> Arling and Swyers Group</a> by <a href="http://www.creativeautomaton.com" target="_blank">creative Automaton</a>
+					 </p>
+				 </div>
+			 </footer>
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->

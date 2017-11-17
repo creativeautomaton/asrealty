@@ -19,13 +19,13 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 <?php
 		// s=&post_type=listing&max=250k-500k&min=100k-250k&type=apartment&where=60067
-		$listingType = $_GET['post_type'];
-		$saleOrLease = $_GET['saleorlease'];
-		$priceRange = $_GET['priceRange'];
-		$propertyType = $_GET['type'];
-		$cityZip = $_GET['where'];
-		$beds = $_GET['MinBeds'];
-		$baths = $_GET['MinBaths'];
+		$listingType = if(isset){ $_GET['post_type'] } else{ echo "empty" };
+		$saleOrLease =  if(isset){ $_GET['saleorlease'] } else{ echo "empty" };
+		$priceRange = if(isset){ $_GET['priceRange'] } else{ echo "empty" };
+		$propertyType = if(isset){ $_GET['type'] } else{ echo "empty" };
+		$cityZip = if(isset){$_GET['where'] } else{ echo "empty" };
+		$beds = if(isset){ $_GET['MinBeds'] } else{ echo "empty" };
+		$baths = if(isset){ $_GET['MinBaths'] } else{ echo "empty" };
 		echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $priceRange  .' '. $propertyType .' '. $cityZip;
 ?>
 
