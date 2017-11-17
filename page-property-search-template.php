@@ -61,31 +61,26 @@ get_header(); ?>
 			 		getSearch();
 			 }, 500);
 
-			 var listingsHTML = [];
 			 var listingsArray = [];
 			 $('.propSearchBtns').on('click', function(){
 
 				 $('.listing_block').each( function(i){
+					 		var image =  $('.listing_photo img').attr('src');
+							var mls =  $('.mls_data').text();
+							var prop_type_data =  $('.prop-type_data').text();
+							var price_data =  $('.price_data').text();
+							var area_data =  $('.area_data').text();
+							var address_data =  $('.address_data').text();
+							var addresscont_data =  $('.addresscont_data').text();
+							var county_data =  $('.county_data').text();
+							var beds_baths_data =  $('.beds-baths_data').text();
+							var sqft_data =  $('.sqft_data').text();
 
-						 	$('.listing_photo img').each( function(img){
-								 var image = $('.listing_photo img').attr('src');
-								 console.log(image);
-							});
-					 		// var image =  $('.listing_photo img').attr('src');
-							// var mls =  $('.mls_data').text();
-							// var prop_type_data =  $('.prop-type_data').text();
-							// var price_data =  $('.price_data').text();
-							// var area_data =  $('.area_data').text();
-							// var address_data =  $('.address_data').text();
-							// var addresscont_data =  $('.addresscont_data').text();
-							// var county_data =  $('.county_data').text();
-							// var beds_baths_data =  $('.beds-baths_data').text();
-							// var sqft_data =  $('.sqft_data').text();
-              //
-						  // listingsArray.push( );
+						  var property = { image, mls, prop_type_data, area_data };
+						 listingsArray.push( property);
 
 				 });
-				  console.log(listingsHTML);
+				  console.log(listingsArray);
 			 });
 
 
