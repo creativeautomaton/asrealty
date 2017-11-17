@@ -4355,7 +4355,23 @@ object {
 }*/
 .listing_block {
 	width: 100%;
-	display: inline-block;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		height: 300px;
+		padding: 1rem;
+		border: 1px solid silver;
+		margin-top: 10px;
+		-ms-box-orient: horizontal;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
 }
 .listingSearchWidgetContainer .listing_block {
     padding: 5px 10px;
@@ -4366,14 +4382,14 @@ object {
     width: 100%;
 }
 .listingSearchWidgetContainer .listing_photo_wrap{
-	float: left;
+	  width: 100%;
+		float: none;
 }
 .listingSearchWidgetContainer .listing_details_wrap {
 	width: 100%;
 	display: block;
 	float: none;
 	max-width: 600px;
-	float: left;
 }
 .listing_more_photos_container {
 	position: absolute;
