@@ -37,7 +37,7 @@ get_header(); ?>
       						  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
       						<img src="<?php echo $image[0]; ?>" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
                 <?php else :  ?>
-                  	<img src="/assets/images/placeholder-house.jpeg" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
+                  	<img src="/assets/images/placeholder-avatar.jpeg" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
                 <?php endif; ?>
       					<header class="entry-header">
                   <div class="entry-content">
