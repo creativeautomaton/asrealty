@@ -108,7 +108,6 @@ get_header(); ?>
 						 if ( $loop->have_posts() ) :
 								while (  $loop->have_posts() ) : $loop->the_post();
 				?>
-
 				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
 					<a href="https://demo.winningagent.com/agent-focused/community/the-lakelands/" title="The Lakelands" class="wap-community-link">
 						<?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -149,22 +148,39 @@ get_header(); ?>
 				<div class="widget-wrap">
 					<div class="textwidget">
 						<div class="three-fourths first">
+              <?php
+      						$args = array( 'post_type' => 'client-testimonials', 'posts_per_page' => 1 );
+      						$loop = new WP_Query( $args );
+      						 if ( $loop->have_posts() ) :
+      								while (  $loop->have_posts() ) : $loop->the_post();
+              ?>
+                      	<?php if (has_post_thumbnail( $post->ID ) ): ?>
+                						  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                					 <img src="<?php echo $image[0]; ?>" class="alignleft testimonial" alt="" itemprop="image" height="540" width="1350"></a>
+                				 <?php endif; ?>
+  									     <?php the_content(); ?>
+  									   <br>
+  									 	 <cite>– <?php the_title(); ?></cite>
+						<?php
+    				    endwhile; else : endif;
+    						wp_reset_postdata();
+      			?>
 							<?php
-									// check if the repeater field has rows of data
-									if( have_rows('testimonial') ):
-									// loop through the rows of data
-										while ( have_rows('testimonial') ) : the_row();
-												// display a sub field value
-										 ?>
-										 <img class="alignleft testimonial" src="<?php the_sub_field('photo');  ?>">
-										 <?php the_sub_field('quote');   ?>
-										 <br>
-										 <cite>– <?php the_sub_field('name');  ?></cite>
-										<?php
-										endwhile;
-									else :
-										// no rows found
-									endif;
+									// // check if the repeater field has rows of data
+									// if( have_rows('testimonial') ):
+									// // loop through the rows of data
+									// 	while ( have_rows('testimonial') ) : the_row();
+									// 			// display a sub field value
+									// 	 ?>
+									  	 <!-- <img class="alignleft testimonial" src="<?php // the_sub_field('photo');  ?>"> -->
+									 	 <?php // the_sub_field('quote');   ?>
+									  	 <!-- <br> -->
+									 	 <!-- <cite>– <?php// the_sub_field('name');  ?></cite> -->
+									  	<?php
+									// 	endwhile;
+									// else :
+									// 	// no rows found
+									// endif;
 							?>
 					</div>
 					<div class="one-fourth">

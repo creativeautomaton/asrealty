@@ -18,17 +18,24 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<section  >
-
-        <?php // Show the selected frontpage content.
-    		if ( have_posts() ) :
-    			while ( have_posts() ) : the_post();
-    				get_template_part( 'template-parts/page/content', 'front-page' );
-    			endwhile;
-    		else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
-    			get_template_part( 'template-parts/post/content', 'none' );
-    		endif;
-    		?>
+		<section>
+        <?php
+            $args = array( 'post_type' => 'client-testimonials', 'posts_per_page' => 10 );
+            $loop = new WP_Query( $args );
+             if ( $loop->have_posts() ) :
+                while (  $loop->have_posts() ) : $loop->the_post();
+        ?>
+                  <?php if (has_post_thumbnail( $post->ID ) ): ?>
+                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                     <img src="<?php echo $image[0]; ?>" class="alignleft testimonial" alt="" itemprop="image" height="540" width="1350"></a>
+                   <?php endif; ?>
+                   <?php the_content(); ?>
+                 <br>
+                 <cite>– <?php the_title(); ?></cite>
+      <?php
+          endwhile; else : endif;
+          wp_reset_postdata();
+      ?>
 		</section>
 
 
