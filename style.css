@@ -4427,7 +4427,9 @@ object {
 	top: -50%;
 	left: 0;
 }
-
+.entry-title {
+    font-size: 2rem !important;
+}
 /* Testimonials page */
 .testimonials .entry-title::after {
     content: "";
