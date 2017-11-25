@@ -19,6 +19,46 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<section>
+      <div id="front-page-5" class="front-page-5">
+
+      	<div class=" ">
+      	<div class="widget-area">
+      		<section id="featured-community-1" class="widget featured-content featured-community">
+      			<div class="widget-wrap">
+
+      				<?php
+      						$args = array( 'post_type' => 'client-testimonials', 'posts_per_page' => 10 );
+      						$loop = new WP_Query( $args );
+      						 if ( $loop->have_posts() ) :
+      								while (  $loop->have_posts() ) : $loop->the_post();
+      				?>
+      				<article class="post-514 wap-community type-wap-community status-publish has-post-thumbnail wap-community-type-family-friendly wap-community-type-parks entry">
+      					 	<?php if (has_post_thumbnail( $post->ID ) ): ?>
+      						  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+      						<img src="<?php echo $image[0]; ?>" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
+      						<?php endif; ?>
+      					<header class="entry-header">
+      						<h4 class="entry-title">
+      							 <?php the_title(); ?>
+      						</h4>
+      					</header>
+      					<div class="entry-content">
+      						<?php the_content(); ?>
+      					</p>
+      				</div>
+      			</article>
+      				<?php
+      					  endwhile;
+      						else :
+      						endif;
+      						wp_reset_postdata();
+      			?>
+      		</div>
+      	</section>
+      	</div>
+      </div>
+
+  <div style="display:none;">
         <?php
             $args = array( 'post_type' => 'client-testimonials', 'posts_per_page' => 10 );
             $loop = new WP_Query( $args );
@@ -36,6 +76,7 @@ get_header(); ?>
           endwhile; else : endif;
           wp_reset_postdata();
       ?>
+    </div>
 		</section>
 
 
