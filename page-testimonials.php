@@ -48,6 +48,7 @@ get_header(); ?>
 
       				</div>
       			</article>
+            <hr />
       				<?php
       					  endwhile;
       						else :
