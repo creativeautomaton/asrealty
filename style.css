@@ -4427,3 +4427,38 @@ object {
 	top: -50%;
 	left: 0;
 }
+
+/* Testimonials page */
+.testimonials .entry-title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    top: 6px;
+    width: 100%;
+}
+.testimonials  .featured-content img {
+    width: auto;
+    float: right;
+    width: 58%;
+}
+.testimonials .entry .entry-content p {
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 3rem;
+    font-family: Times New Roman;
+    font-style: italic;
+    color: #505050;
+}
+ .testimonials .entry-title {
+    color: #222;
+    font-size: 14px;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 0 12rem;
+    margin: 3% auto;
+}

@@ -15,13 +15,13 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area" <?php post_class(); ?>>
 	<main id="main" class="site-main" role="main">
 
 		<section>
       <div id="front-page-5" class="front-page-5">
 
-      	<div class=" ">
+      	<div class="testimonials">
       	<div class="widget-area">
       		<section id="featured-community-1" class="widget featured-content featured-community">
       			<div class="widget-wrap">
@@ -38,13 +38,14 @@ get_header(); ?>
       						<img src="<?php echo $image[0]; ?>" class="entry-image attachment-wap-community" alt="" itemprop="image" height="540" width="1350"></a>
       						<?php endif; ?>
       					<header class="entry-header">
+                  <div class="entry-content">
+        						<?php the_content(); ?>
+        					</p>
       						<h4 class="entry-title">
       							 <?php the_title(); ?>
       						</h4>
       					</header>
-      					<div class="entry-content">
-      						<?php the_content(); ?>
-      					</p>
+
       				</div>
       			</article>
       				<?php
