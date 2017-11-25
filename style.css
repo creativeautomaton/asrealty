@@ -4434,8 +4434,8 @@ object {
     display: block;
     height: 2px;
     position: relative;
-    top: 6px;
-    width: 100%;
+    top: 6px !important;
+    width: 100% !important;
 }
 .testimonials  .featured-content img {
     width: auto;
@@ -4457,18 +4457,18 @@ object {
     font-family: Times New Roman;
     font-style: italic;
     color: #505050;
+    line-height: 150%;
 }
  .testimonials .entry-title {
-    color: #222;
-    font-size: 14px;
-    font-size: 3rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    color: #222 !important;
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
     width: 100%;
     text-align: center;
-    padding: 0 12rem;
-    margin: 3% auto;
+    padding: 0 1rem;
+    margin: 3% auto !important;
 }
 
 body.page-two-column:not(.archive) #primary .testimonials .entry-content{

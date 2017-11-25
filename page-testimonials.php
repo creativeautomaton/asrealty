@@ -42,7 +42,7 @@ get_header(); ?>
         						<?php the_content(); ?>
         					</p>
       						<h4 class="entry-title">
-      							 <?php the_title(); ?>
+      							-  <?php the_title(); ?>
       						</h4>
       					</header>
 
