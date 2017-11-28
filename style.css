@@ -4380,6 +4380,41 @@ header .title-area {
     margin: 2rem;
     padding: 1rem;
 }*/
+.listing_details{
+    background: #566473;
+    color: #fff;
+    padding: 26px 10px;
+}
+.listing_label { float: left;}
+.mls_data{ float: right;}
+.listing_label{ float: left;}
+.prop-type_data{ float: right;}
+.listing_label{ float: left;}
+.price_data{ float: right;}
+.listing_label{ float: left;}
+.area_data{ float: right;}
+.listing_label{ float: left;}
+.address_data{ float: right;}
+.listing_label{ float: left;}
+.addresscont_data{ float: right;}
+.listing_label{ float: left;}
+.county_data{ float: right;}
+.listing_label{ float: left;}
+.beds-baths_data{ float: right;}
+.listing_internal_label{ float: left;}
+.listing_label{ float: right;}
+.sqft_data{ float: left;}
+.listing_label{ float: right;}
+.office_data{ float: left;}
+
+
+
+
+
+
+
+
+
 .flippable_listing_page{
 	display: inline-block;
 }
@@ -4390,11 +4425,18 @@ header .title-area {
 		margin: 0;
 		list-style: none;
 		border: 1px solid silver;
+    width: 100%;
 }
 .listingSearchWidgetContainer .listing_photo {
     float: none;
     width: 100%;
 		text-align: center;
+}
+@media only screen and (max-width:980px) {
+    .listingSearchWidgetContainer .listing_photo img {
+        min-height: auto;
+        max-height: 100%;
+    }
 }
 .listingSearchWidgetContainer .listing_photo img {
     min-height: 240px;
