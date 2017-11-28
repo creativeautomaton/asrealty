@@ -4428,20 +4428,19 @@ header .title-area {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/*.listing_more_photos_container > img {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}*/
+.listing_more_photos_container > img {
+  position: relative;
+  max-height: 400px;
+	min-height: 250px;
+}
 .listing_more_photos_container {
     position: absolute;
     width: 100%;
     overflow: hidden;
-    max-height: 422px;
+		max-height: 400px;
+		min-height: 250px;
 }
-.listing_more_photos_container:before {
+.listing_more_photos_container::before {
 		  position: absolute;
 			width: 100%;
 			height: 100vh;
