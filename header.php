@@ -33,6 +33,9 @@
 	$(document).ready(function(){
 			// $('*').hasClass('listing_back_button').addClass(" button");
 			console.log('loaded jquery');
+      $('.sub-menu-toggle').on('click', function(){
+          $('.nav-primary .genesis-nav-menu').toggle();
+      });
 	});
 </script>
 </head>

@@ -4291,6 +4291,29 @@ object {
 	background-color: #566473;
   height: 50px;
 }
+header .wrap{
+  background: #566473;
+}
+
+/* Mobile Menu */
+@media only screen and (max-width:980px) {
+  .sub-menu-toggle {
+      border: none;
+      float: right;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
+  }
+  .nav-primary .genesis-nav-menu .menu-item {
+    display: none;
+    float: none;
+    position: relative;
+    text-align: center;
+    padding-top: 6px;
+  }
+}
 
 
 /* contact page */
