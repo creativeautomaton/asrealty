@@ -60,8 +60,7 @@
 
 
 	<header class="  nav-wrapper" itemscope="" itemtype="https://schema.org/WPHeader">
-    <div class="wrap">
-       
+    <div class="wrap"> 
       		<div class="title-area">
       			<p class="site-title" itemprop="headline">
       				<div class="site-branding-text">

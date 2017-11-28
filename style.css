@@ -4293,10 +4293,15 @@ object {
 }
 header .wrap{
   background: #566473;
+  height: 50px;
+}
+header .title-area { 
+    height: 50px;
 }
 
+
 /* Mobile Menu */
-/*@media only screen and (max-width:980px) {
+@media only screen and (max-width:980px) {
   .menu-toggle {
       border: none;
       float: right;
@@ -4313,7 +4318,7 @@ header .wrap{
     text-align: center;
     padding-top: 6px;
   }
-}*/
+}
 
 
 /* contact page */
