@@ -37,7 +37,18 @@
           $('.nav-primary').toggle();
            $(this).show();
       });
-      
+
+			$(".listing_more_photos_container > img:gt(0)").hide();
+
+			setInterval(function() {
+			  $('.listing_more_photos_container > img:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('.listing_more_photos_container');
+			}, 3000);
+
 	});
 </script>
 </head>
