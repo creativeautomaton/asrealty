@@ -61,7 +61,7 @@
 
 	<header class="  nav-wrapper" itemscope="" itemtype="https://schema.org/WPHeader">
     <div class="wrap">
-      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8">
+       
       		<div class="title-area">
       			<p class="site-title" itemprop="headline">
       				<div class="site-branding-text">
@@ -81,8 +81,7 @@
       				</div><!-- .site-branding-text -->
       			</p>
        		</div>
-    </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-4">
+
         <!-- <button class="menu-toggle nav-primary " aria-pressed="false" role="button" id="mobile-genesis-nav-primary" >
             	<span class="screen-reader-text">Menu</span>
         </button> -->
@@ -97,7 +96,6 @@
     				'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
     		 	) );  ?>
     		</nav>
-    </div>
 </div>
 
 </header>
