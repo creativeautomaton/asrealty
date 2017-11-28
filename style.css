@@ -4443,18 +4443,19 @@ header .title-area {
     min-height: 240px;
     max-height: 240px;
 }
+.listing_more_photos{
+		background-color: #67ddab;
+		border: 4px solid #67ddab;
+		color: #fff;
+		float: left;
+		width: 100%;
+}
 @media only screen and (max-width:980px) {
     .listingSearchWidgetContainer .listing_photo img {
         min-height: auto;
         max-height: 100%;
     }
-    .listing_more_photos{
-        background-color: #67ddab;
-        border: 4px solid #67ddab;
-        color: #fff;
-        float: left;
-        width: 100%;
-    }
+
 		.menu-toggle {
 			margin: 40px 0px 0px 0px;
 		}
