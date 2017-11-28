@@ -4451,6 +4451,13 @@ header .title-area {
         min-height: auto;
         max-height: 100%;
     }
+    .listing_more_photos{
+        background-color: #67ddab;
+        border: 4px solid #67ddab;
+        color: #fff;
+        float: left;
+        width: 100%;
+    }
 }
 
 .listingSearchWidgetContainer .listing_photo_wrap{
@@ -4462,7 +4469,7 @@ header .title-area {
 	width: 100%;
 	display: block;
 	float: none;
-	max-width: 600px;
+	/*max-width: 600px;*/
 	text-align: center;
 }
 .listing_more_photos_container {
