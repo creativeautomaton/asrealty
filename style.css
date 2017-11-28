@@ -4384,6 +4384,7 @@ header .title-area {
     background: #566473;
     color: #fff;
     padding: 26px 10px;
+    float: left;
 }
 .listing_label { float: left;}
 .listing_internal_label{ float: left;}
@@ -4441,16 +4442,17 @@ header .title-area {
     width: 100%;
 		text-align: center;
 }
+.listingSearchWidgetContainer .listing_photo img {
+    min-height: 240px;
+    max-height: 240px;
+}
 @media only screen and (max-width:980px) {
     .listingSearchWidgetContainer .listing_photo img {
         min-height: auto;
         max-height: 100%;
     }
 }
-.listingSearchWidgetContainer .listing_photo img {
-    min-height: 240px;
-    max-height: 240px;
-}
+
 .listingSearchWidgetContainer .listing_photo_wrap{
 	  width: 100%;
 		float: none;
