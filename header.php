@@ -38,9 +38,15 @@
            $(this).show();
       });
 
-			$('.listing_more_photos_container')
-					.prepend('<span class="privious-arrrow"> < </span>')
-					.append('<span class="next-arrrow"> > </span>');
+			$('.listing_more_photos').on('click', function(){ 
+						setTimeout(function () {
+							$('.listing_more_photos_container')
+									.prepend('<span class="privious-arrrow"> < </span>')
+									.append('<span class="next-arrrow"> > </span>');
+						}, 600);
+
+			})
+
 
 			$(".listing_more_photos_container > img:gt(0)").hide();
 
