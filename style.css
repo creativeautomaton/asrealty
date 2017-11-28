@@ -4450,6 +4450,15 @@ header .title-area {
 		float: left;
 		width: 100%;
 }
+.listing_more_photos:hover {
+    background-color: #333;
+    border: 4px solid #333;
+    color: #fff;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+}
+
 @media only screen and (max-width:980px) {
     .listingSearchWidgetContainer .listing_photo img {
         min-height: auto;
