@@ -4441,6 +4441,8 @@ header .title-area {
 		min-height: 250px;
 }
 .listing_more_photos_container::before {
+		 	content: " ";
+			display: block;
 		  position: absolute;
 			width: 100%;
 			height: 100vh;
