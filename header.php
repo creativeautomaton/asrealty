@@ -83,9 +83,9 @@
        		</div>
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-4">
-        <button class="menu-toggle nav-primary " aria-pressed="false" role="button" id="mobile-genesis-nav-primary" style="">
+        <!-- <button class="menu-toggle nav-primary " aria-pressed="false" role="button" id="mobile-genesis-nav-primary" >
             	<span class="screen-reader-text">Menu</span>
-        </button>
+        </button> -->
 
     		<h2 class="screen-reader-text">Main navigation</h2>
     			<button class="menu-toggle nav-primary" aria-expanded="false" aria-pressed="false" role="button" id="mobile-genesis-nav-primary">Menu</button>
