@@ -4407,6 +4407,32 @@ header .title-area {
 .listing_label{ float: right;}
 .office_data{ float: left;}
 
+.listing_label,
+.mls_data,
+.listing_label,
+.prop-type_data,
+.listing_label,
+.price_data,
+.listing_label,
+.area_data,
+.listing_label,
+.address_data,
+.listing_label,
+.addresscont_data,
+.listing_label,
+.county_data,
+.listing_label,
+.beds-baths_data,
+.listing_internal_label,
+.listing_label,
+.sqft_data,
+.listing_label,
+.office_data {
+      width: 50%;
+}
+
+
+
 
 
 
