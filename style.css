@@ -4441,6 +4441,13 @@ header .title-area {
     overflow: hidden;
     max-height: 422px;
 }
+.listing_more_photos_container:before {
+		  position: absolute;
+			width: 100%;
+			height: 100vh;
+			background: #333;
+			z-index: 1;
+}
 
 
 
