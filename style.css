@@ -4386,47 +4386,30 @@ header .title-area {
     padding: 26px 10px;
 }
 .listing_label { float: left;}
-.mls_data{ float: right;}
-.listing_label{ float: left;}
-.prop-type_data{ float: right;}
-.listing_label{ float: left;}
-.price_data{ float: right;}
-.listing_label{ float: left;}
-.area_data{ float: right;}
-.listing_label{ float: left;}
-.address_data{ float: right;}
-.listing_label{ float: left;}
-.addresscont_data{ float: right;}
-.listing_label{ float: left;}
-.county_data{ float: right;}
-.listing_label{ float: left;}
-.beds-baths_data{ float: right;}
 .listing_internal_label{ float: left;}
-.listing_label{ float: right;}
+
+.mls_data{ float: right;}
+.prop-type_data{ float: right;}
+.price_data{ float: right;}
+.area_data{ float: right;}
+.address_data{ float: right;}
+.addresscont_data{ float: right;}
+.county_data{ float: right;}
+.beds-baths_data{ float: right;}
 .sqft_data{ float: left;}
-.listing_label{ float: right;}
 .office_data{ float: left;}
 
 .listing_label,
 .mls_data,
-.listing_label,
 .prop-type_data,
-.listing_label,
 .price_data,
-.listing_label,
 .area_data,
-.listing_label,
 .address_data,
-.listing_label,
 .addresscont_data,
-.listing_label,
 .county_data,
-.listing_label,
 .beds-baths_data,
 .listing_internal_label,
-.listing_label,
 .sqft_data,
-.listing_label,
 .office_data {
       width: 50%;
 }
