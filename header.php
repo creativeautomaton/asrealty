@@ -40,10 +40,11 @@
 
 			$('.listing_more_photos').on('click', function(){
 						setTimeout(function () {
-							$('.listing_more_photos_container').prepend('<span class="previous-arrrow"> < </span>');
-						  $('.listing_more_photos_container').append('<span class="next-arrrow"> > </span>');
-						}, 600);
-
+								$('.listing_more_photos_container').each( function(){
+									$(this).prepend('<span class="previous-arrrow"> < </span>');
+									$(this).append('<span class="next-arrrow"> > </span>');
+								});
+						}, 600); 
 			});
 
 			$(".listing_more_photos_container > img:gt(0)").hide();
