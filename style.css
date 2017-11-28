@@ -4442,7 +4442,7 @@ header .title-area {
 		min-height: 250px;
 		text-align: center;
 }
-.listing_more_photos_container::before {
+/*.listing_more_photos_container::before {
 		 	content: " ";
 			display: block;
 		  position: absolute;
@@ -4450,7 +4450,7 @@ header .title-area {
 			height: 100vh;
 			background: #333;
 			z-index: 1;
-}
+}*/
 .listing_more_photos_container .next-arrow {
 		position: absolute;
 			top: 100px;
