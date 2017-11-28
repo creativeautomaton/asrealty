@@ -4420,11 +4420,6 @@ header .title-area {
 
 
 
-
-
-
-
-
 .flippable_listing_page{
 	display: inline-block;
 }
@@ -4458,6 +4453,9 @@ header .title-area {
         float: left;
         width: 100%;
     }
+		.menu-toggle {
+			margin: 40px 0px 0px 0px;
+		}
 }
 
 .listingSearchWidgetContainer .listing_photo_wrap{
