@@ -4296,8 +4296,8 @@ header .wrap{
 }
 
 /* Mobile Menu */
-@media only screen and (max-width:980px) {
-  .sub-menu-toggle {
+/*@media only screen and (max-width:980px) {
+  .menu-toggle {
       border: none;
       float: right;
       padding: 20px;
@@ -4307,13 +4307,13 @@ header .wrap{
       z-index: 100;
   }
   .nav-primary .genesis-nav-menu .menu-item {
-    display: none;
+    display: block;
     float: none;
     position: relative;
     text-align: center;
     padding-top: 6px;
   }
-}
+}*/
 
 
 /* contact page */

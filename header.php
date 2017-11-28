@@ -59,40 +59,45 @@
 	</header><!-- #masthead -->
 
 
-	<header class="  nav-wrapper" itemscope="" itemtype="https://schema.org/WPHeader"><div class="wrap">
-		<div class="title-area">
-			<p class="site-title" itemprop="headline">
-				<div class="site-branding-text">
-					<?php if ( is_front_page() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif; ?>
+	<header class="  nav-wrapper" itemscope="" itemtype="https://schema.org/WPHeader">
+    <div class="wrap">
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8">
+      		<div class="title-area">
+      			<p class="site-title" itemprop="headline">
+      				<div class="site-branding-text">
+      					<?php if ( is_front_page() ) : ?>
+      						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+      					<?php else : ?>
+      						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+      					<?php endif; ?>
 
-					<?php
-					$description = get_bloginfo( 'description', 'display' );
+      					<?php
+      					$description = get_bloginfo( 'description', 'display' );
 
-					if ( $description || is_customize_preview() ) :
-					?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif; ?>
-				</div><!-- .site-branding-text -->
-			</p>
- 		</div>
-    <button class="menu-toggle nav-primary" aria-pressed="false" role="button" id="mobile-genesis-nav-primary" style="">
-        	<span class="screen-reader-text">Menu</span>
-    </button> 
+      					if ( $description || is_customize_preview() ) :
+      					?>
+      						<p class="site-description"><?php echo $description; ?></p>
+      					<?php endif; ?>
+      				</div><!-- .site-branding-text -->
+      			</p>
+       		</div>
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-4">
+        <button class="menu-toggle nav-primary " aria-pressed="false" role="button" id="mobile-genesis-nav-primary" style="">
+            	<span class="screen-reader-text">Menu</span>
+        </button>
 
-		<h2 class="screen-reader-text">Main navigation</h2>
-			<button class="menu-toggle nav-primary" aria-expanded="false" aria-pressed="false" role="button" id="mobile-genesis-nav-primary">Menu</button>
+    		<h2 class="screen-reader-text">Main navigation</h2>
+    			<button class="menu-toggle nav-primary" aria-expanded="false" aria-pressed="false" role="button" id="mobile-genesis-nav-primary">Menu</button>
 
-    <nav class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation" style="">
-			<?php wp_nav_menu( array(
-				'menu'  => 'Main Menu',
-				'menu_id' => 'menu-header-menu',
-				'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
-		 	) );  ?>
-		</nav>
+        <nav class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation" style="">
+    			<?php wp_nav_menu( array(
+    				'menu'  => 'Main Menu',
+    				'menu_id' => 'menu-header-menu',
+    				'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows'
+    		 	) );  ?>
+    		</nav>
+    </div>
 </div>
 
 </header>
