@@ -33,8 +33,8 @@
 	$(document).ready(function(){
 			// $('*').hasClass('listing_back_button').addClass(" button");
 			console.log('loaded jquery');
-      $('.sub-menu-toggle').on('click', function(){
-          $('.nav-primary .genesis-nav-menu').toggle();
+      $('.menu-toggle').on('click', function(){
+          $('.nav-primary').toggle();
       });
 	});
 </script>
@@ -78,17 +78,15 @@
 					<?php endif; ?>
 				</div><!-- .site-branding-text -->
 			</p>
-
-			<p class="site-description" itemprop="description">A WordPress Real Estate Theme for the Genesis Framework</p>
-		</div>
-		<button class="sub-menu-toggle" aria-expanded="false" aria-pressed="false" role="button">
-			<span class="screen-reader-text">Menu</span>
-		</button>
+ 		</div>
+    <button class="menu-toggle nav-primary" aria-pressed="false" role="button" id="mobile-genesis-nav-primary" style="">
+        	<span class="screen-reader-text">Menu</span>
+    </button> 
 
 		<h2 class="screen-reader-text">Main navigation</h2>
 			<button class="menu-toggle nav-primary" aria-expanded="false" aria-pressed="false" role="button" id="mobile-genesis-nav-primary">Menu</button>
 
-  <nav class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation" style="">
+    <nav class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary" aria-label="Main navigation" style="">
 			<?php wp_nav_menu( array(
 				'menu'  => 'Main Menu',
 				'menu_id' => 'menu-header-menu',
