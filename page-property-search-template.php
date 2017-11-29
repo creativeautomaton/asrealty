@@ -129,14 +129,15 @@ get_header(); ?>
 					 									$(this).prepend('<span class="previous-arrow">   </span>');
 					 									$(this).append('<span class="next-arrow">   </span>');
 					 								});
+
 													$(".listing_more_photos_container > img:gt(0)").hide()
 
 													$('.next-arrow').on('click', function(){
 														  console.log('clicked next');
 															$('.listing_more_photos_container > img:first')
-															 .fadeOut(1000)
+															 .fadeOut(500)
 															 .next()
-															 .fadeIn(1000)
+															 .fadeIn(500)
 															 .end()
 															 .appendTo('.listing_more_photos_container');
 													})
@@ -144,9 +145,9 @@ get_header(); ?>
 													$('.previous-arrow').on('click', function(){
 														  console.log('clicked previous');
 															$('.listing_more_photos_container > img:last-child')
-															 .fadeOut(1000)
-															 .next()
-															 .fadeIn(1000)
+															 .fadeOut(500)
+															 .last()
+															 .fadeIn(500)
 															 .end()
 															 .appendTo('.listing_more_photos_container');
 													})
