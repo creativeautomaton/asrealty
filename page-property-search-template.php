@@ -145,7 +145,7 @@ get_header(); ?>
 														  console.log('clicked previous');
 															$('.listing_more_photos_container > img:last-child')
 															 .fadeOut(1000)
-															 .prev()
+															 .next()
 															 .fadeIn(1000)
 															 .end()
 															 .appendTo('.listing_more_photos_container');
