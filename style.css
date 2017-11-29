@@ -4439,7 +4439,8 @@ header .title-area {
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
-} 
+	max-height: 400px;
+}
 /*.listing_more_photos_container::before {
 		 	content: " ";
 			display: block;
