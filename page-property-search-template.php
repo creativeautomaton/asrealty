@@ -146,12 +146,8 @@ get_header(); ?>
 																  console.log('clicked previous');
 																	var lastImg = $('.listing_image_large').last();
 																	console.log(lastImg);
-																	// $('.listing_more_photos_container > img:first')
-																	//  .fadeOut(500);
-																	// $('.listing_more_photos_container > img:last-child')
-																	//  .fadeIn(500)
-																	//  .end()
-																	//  .appendTo('.listing_more_photos_container');
+																	$('.listing_more_photos_container > img:first').fadeOut(500);
+																	$(lastImg).fadeIn(500).end().appendTo('.listing_more_photos_container');
 															})
 					 						}, 300)
 
