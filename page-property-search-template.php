@@ -101,6 +101,7 @@ get_header(); ?>
 					 									$(this).append('<span class="next-arrow">   </span>');
 					 								});
 					 						}, 300)
+											morePhotosSlider()
 											 // console.log(largeImg);
 
 											 // .each( function(img){
