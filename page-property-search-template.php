@@ -144,8 +144,8 @@ get_header(); ?>
 
 													$('.previous-arrow').on('click', function(){
 														  console.log('clicked previous');
-															var lastImg = $('.listing_more_photos_container > img:last-child');
-															console.log( );
+															var lastImg = $('.listing_more_photos_container > img:last-child').html();
+															console.log( lastImg );
 															// $('.listing_more_photos_container > img:first')
 															//  .fadeOut(500);
 															// $('.listing_more_photos_container > img:last-child')
