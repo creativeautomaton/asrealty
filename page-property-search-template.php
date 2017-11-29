@@ -97,8 +97,8 @@ get_header(); ?>
 											 var largeImg = $('#listing_photoblock_' + mlsNum).attr('photos');
 											 setTimeout(function () {
 					 								$('.listing_more_photos_container').each( function(){
-					 									$(this).prepend('<div class="previous-arrrow" style="position: absolute;z-index: 1;display: block;width: 30px;height: 100%;min-height: 200px;vertical-align: middle;background: #2c333c;color: #eee;"> < </div>');
-					 									$(this).append('<span class="next-arrrow"> > </span>');
+					 									$(this).prepend('<span class="previous-arrow">   </span>');
+					 									$(this).append('<span class="next-arrow">   </span>');
 					 								});
 					 						}, 300)
 											 // console.log(largeImg);

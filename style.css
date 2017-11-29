@@ -4464,6 +4464,18 @@ header .title-area {
     background: #2c333c;
     color: #eee;
 }
+.next-arrow:hover,
+.previous-arrow:hover{
+	background: #333;
+	color: #f1f1f1
+}
+.next-arrow::before,
+.previous-arrow::before{
+	position: absolute;
+	z-index: 2;
+	display: block;
+	top: 50%;
+}
 .next-arrow {
 			top: 0px;
 		  left: 0px;
@@ -4472,6 +4484,8 @@ header .title-area {
 	 top: 0px;
 	 right: 0px;
 }
+.next-arrow::before{ content: " > "; }
+.previous-arrow::before{ content: " < "; }
 
 
 .flippable_listing_page{
