@@ -132,7 +132,7 @@ get_header(); ?>
 
 													$(".listing_more_photos_container > img:gt(0)").hide()
 
-													$('.next-arrow').on('click', function(){
+													$('.next-arrow',this).on('click', function(){
 														  console.log('clicked next');
 															$('.listing_more_photos_container > img:first')
 															 .fadeOut(500)
@@ -142,10 +142,10 @@ get_header(); ?>
 															 .appendTo('.listing_more_photos_container');
 													})
 
-													$('.previous-arrow').on('click', function(){
-														  console.log('clicked previous');
-															var lastImg = $('.listing_more_photos_container img:last-child').html();
-															console.log( lastImg );
+													$('.previous-arrow', this).on('click', function(){
+														  console.log('clicked previous'); 
+															var lastImg = $('.listing_image_large').last();
+															console.log(lastImg);
 															// $('.listing_more_photos_container > img:first')
 															//  .fadeOut(500);
 															// $('.listing_more_photos_container > img:last-child')
