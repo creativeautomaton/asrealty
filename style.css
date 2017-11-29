@@ -4430,16 +4430,17 @@ header .title-area {
 
 .listing_more_photos_container > img {
   position: relative;
-  max-height: 400px;
+	max-height: 500px;
 	min-height: 250px;
-	width: 100%;
+	width: 90%;
 }
 .listing_more_photos_container {
 	position: relative !important;
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
-	max-height: 400px;
+	max-height: 500px;
+	min-height: 250px; 
 }
 /*.listing_more_photos_container::before {
 		 	content: " ";
