@@ -100,7 +100,7 @@ get_header(); ?>
 					 									$(this).prepend('<span class="previous-arrrow"> < </span>');
 					 									$(this).append('<span class="next-arrrow"> > </span>');
 					 								});
-					 						}, 1500)
+					 						}, 300)
 											 // console.log(largeImg);
 
 											 // .each( function(img){
