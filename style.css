@@ -4536,17 +4536,29 @@ header .title-area {
 		.listing_more_photos_container {
 			max-height: 500px;
 		}
+
+}
+@media only screen and (max-width:480px) {
+		.menu-toggle {
+		    border: none;
+		    display: inline-block;
+		    padding: 10px 30px;
+		    position: relative;
+		    width: 100%;
+		    z-index: 1000;
+		    margin-top: 5rem;
+		}
 		.listing_button_container_top{ margin-top: 4rem;}
 		.listing_back_button, .listing_list_button {
-		    float: none;
-		    padding: 2rem 3rem;
-		    background: #333;
-		    color: #fff;
-		    text-decoration: navajowhite;
-		    margin: 0;
-		    width: 100%;
-		    text-align: center;
-		    display: block;
+				float: none;
+				padding: 2rem 3rem;
+				background: #333;
+				color: #fff;
+				text-decoration: navajowhite;
+				margin: 0;
+				width: 100%;
+				text-align: center;
+				display: block;
 		}
 }
 
