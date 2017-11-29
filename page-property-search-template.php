@@ -129,9 +129,28 @@ get_header(); ?>
 					 									$(this).prepend('<span class="previous-arrow">   </span>');
 					 									$(this).append('<span class="next-arrow">   </span>');
 					 								});
+													$(".listing_more_photos_container > img:gt(0)").hide()
+
+													$('.next-arrow').on('click', function(){
+															$('.listing_more_photos_container > img:first')
+															 .fadeOut(1000)
+															 .next()
+															 .fadeIn(1000)
+															 .end()
+															 .appendTo('.listing_more_photos_container');
+													})
+
+													$('.prev-arrow').on('click', function(){
+															$('.listing_more_photos_container > img:first')
+															 .fadeOut(1000)
+															 .previous()
+															 .fadeIn(1000)
+															 .end()
+															 .appendTo('.listing_more_photos_container');
+													})
 					 						}, 300)
 
-											morePhotosSlider()
+
 											 // console.log(largeImg);
 
 											 // .each( function(img){
