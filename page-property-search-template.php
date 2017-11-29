@@ -144,7 +144,7 @@ get_header(); ?>
 
 															$('.previous-arrow').on('click', function(){
 																  console.log('clicked previous');
-																	var lastImg = $('.listing_more_photos_container img.listing_image_large:last-child').html();
+																	var lastImg = $('.listing_image_large').last();
 																	console.log(lastImg);
 																	$('.listing_more_photos_container > img:first').fadeOut(500);
 																	$(lastImg).fadeIn(500).end().appendTo('.listing_more_photos_container');
