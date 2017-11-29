@@ -4538,7 +4538,12 @@ header .title-area {
 		}
 
 }
-@media only screen and (max-width:480px) {
+@media only screen and (min-width:480px) {
+		.listing_page_info {
+			 margin: 1rem auto;
+			 width: 100%;
+			 text-align: center;
+		}
 		.menu-toggle {
 		    border: none;
 		    display: inline-block;
@@ -4555,7 +4560,7 @@ header .title-area {
 				background: #333;
 				color: #fff;
 				text-decoration: navajowhite;
-				margin: 0;
+				margin: 0px;
 				width: 100%;
 				text-align: center;
 				display: block;
