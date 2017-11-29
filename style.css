@@ -4435,13 +4435,11 @@ header .title-area {
 	width: 100%;
 }
 .listing_more_photos_container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-		max-height: 400px;
-		min-height: 250px;
-		text-align: center;
-}
+	position: relative !important;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+} 
 /*.listing_more_photos_container::before {
 		 	content: " ";
 			display: block;
