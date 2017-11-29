@@ -95,7 +95,13 @@ get_header(); ?>
 									$('.listing_more_photos').on('click', function(){
 											 var mlsNum = $('.listing_more_photos', this).attr('mls');
 											 var largeImg = $('#listing_photoblock_' + mlsNum).attr('photos');
-											 console.log(largeImg);
+											 setTimeout(function () {
+					 								$('.listing_more_photos_container').each( function(){
+					 									$(this).prepend('<span class="previous-arrrow"> < </span>');
+					 									$(this).append('<span class="next-arrrow"> > </span>');
+					 								});
+					 						}, 1500)
+											 // console.log(largeImg);
 
 											 // .each( function(img){
 												// 		var image = $('.listing_image_large img', this).attr('src');
