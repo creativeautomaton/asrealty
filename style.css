@@ -4556,13 +4556,14 @@ header .title-area {
 		.listing_button_container_top {
 			 margin-top: 4rem;
 		}
-		.listing_back_button, .listing_list_button {
-				float: none;
+		.listing_back_button,
+		.listing_list_button {
+				float: none !important;
 				padding: 2rem 3rem;
 				background: #333;
 				color: #fff;
 				text-decoration: navajowhite;
-				margin: 0px;
+				margin: 0rem !important;
 				width: 100%;
 				text-align: center;
 				display: block;
