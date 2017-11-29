@@ -4477,11 +4477,11 @@ header .title-area {
 }
 .next-arrow {
 			top: 0px;
-		  left: 0px;
+		  right: 0px;
 }
 .previous-arrow {
 	 top: 0px;
-	 right: 0px;
+	 left: 0px;
 }
 .next-arrow::before{ content: " > "; }
 .previous-arrow::before{ content: " < "; }
