@@ -144,9 +144,9 @@ get_header(); ?>
 
 													$('.previous-arrow').on('click', function(){
 														  console.log('clicked previous');
-															$('.listing_more_photos_container > img:first')
+															$('.listing_more_photos_container > img:last-child')
 															 .fadeOut(500)
-															 .last()
+															 .prev()
 															 .fadeIn(500)
 															 .end()
 															 .appendTo('.listing_more_photos_container');
