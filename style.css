@@ -4440,7 +4440,7 @@ header .title-area {
 	overflow: hidden;
 	text-align: center;
 	max-height: 500px;
-	min-height: 250px; 
+	min-height: 250px;
 }
 /*.listing_more_photos_container::before {
 		 	content: " ";
@@ -4532,6 +4532,9 @@ header .title-area {
     }
 		.menu-toggle {
 			margin: 40px 0px 0px 0px;
+		}
+		.listing_more_photos_container {
+			max-height: 500px;
 		}
 }
 
