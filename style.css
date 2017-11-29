@@ -4525,22 +4525,10 @@ header .title-area {
     cursor: pointer;
 }
 
-@media only screen and (max-width:980px) {
-    .listingSearchWidgetContainer .listing_photo img {
-        min-height: auto;
-        max-height: 100%;
-    }
-		.menu-toggle {
-			margin: 40px 0px 0px 0px;
-		}
-		.listing_more_photos_container {
-			max-height: 500px;
-		}
 
-}
 @media only screen and (max-width:480px) {
 		.listing_page_info {
-			 margin: 1rem auto;
+			 margin: 1rem auto !important;
 			 width: 100%;
 			 text-align: center;
 		}
@@ -4568,6 +4556,20 @@ header .title-area {
 				text-align: center;
 				display: block;
 		}
+}
+
+@media only screen and (max-width:980px) {
+    .listingSearchWidgetContainer .listing_photo img {
+        min-height: auto;
+        max-height: 100%;
+    }
+		.menu-toggle {
+			margin: 40px 0px 0px 0px;
+		}
+		.listing_more_photos_container {
+			max-height: 500px;
+		}
+
 }
 
 .listingSearchWidgetContainer .listing_photo_wrap{
