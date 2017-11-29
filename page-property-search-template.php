@@ -132,6 +132,7 @@ get_header(); ?>
 													$(".listing_more_photos_container > img:gt(0)").hide()
 
 													$('.next-arrow').on('click', function(){
+														  console.log('clicked next');
 															$('.listing_more_photos_container > img:first')
 															 .fadeOut(1000)
 															 .next()
@@ -140,7 +141,8 @@ get_header(); ?>
 															 .appendTo('.listing_more_photos_container');
 													})
 
-													$('.prev-arrow').on('click', function(){
+													$('.previous-arrow').on('click', function(){
+														  console.log('clicked previous');
 															$('.listing_more_photos_container > img:first')
 															 .fadeOut(1000)
 															 .previous()
