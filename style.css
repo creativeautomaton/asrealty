@@ -4538,7 +4538,7 @@ header .title-area {
 		}
 
 }
-@media only screen and (min-width:480px) {
+@media only screen and (max-width:480px) {
 		.listing_page_info {
 			 margin: 1rem auto;
 			 width: 100%;
@@ -4553,7 +4553,9 @@ header .title-area {
 		    z-index: 1000;
 		    margin-top: 5rem;
 		}
-		.listing_button_container_top{ margin-top: 4rem;}
+		.listing_button_container_top {
+			 margin-top: 4rem;
+		}
 		.listing_back_button, .listing_list_button {
 				float: none;
 				padding: 2rem 3rem;
