@@ -39,14 +39,19 @@
       });
 
 			$('.listing_more_photos').on('click', function(){
-						console.log('clicked more photos link');
-						// setTimeout(function () {
-						// 		$('.listing_more_photos_container').each( function(){
-						// 			$(this).prepend('<span class="previous-arrrow"> < </span>');
-						// 			$(this).append('<span class="next-arrrow"> > </span>');
-						// 		});
-						// }, 1500);
+						console.log('clicked more photos link')
+						setTimeout(function () {
+								$('.listing_more_photos_container').each( function(){
+									$(this).prepend('<span class="previous-arrrow"> < </span>');
+									$(this).append('<span class="next-arrrow"> > </span>');
+								});
+						}, 1500)
 			});
+			// $('.listing_more_photos').on('click', function(e){
+			//   console.log('hovered over more photos link')
+			// });
+
+
 
 			$(".listing_more_photos_container > img:gt(0)").hide();
 
