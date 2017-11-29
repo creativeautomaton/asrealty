@@ -37,54 +37,7 @@
           $('.nav-primary').toggle();
            $(this).show();
       });
-
-			$('.listing_more_photos').on('click', function(){
-						console.log('clicked more photos link')
-						// setTimeout(function () {
-						// 		$('.listing_more_photos_container').each( function(){
-						// 			$(this).prepend('<span class="previous-arrrow"> < </span>');
-						// 			$(this).append('<span class="next-arrrow"> > </span>');
-						// 		});
-						// }, 1500)
-			});
-			// $('.listing_more_photos').on('click', function(e){
-			//   console.log('hovered over more photos link')
-			// });
-
-
-			function morePhotosSlider(){
-				$(".listing_more_photos_container > img:gt(0)").hide();
-
-				$('.next-arrow').on('click', function(){
-						$('.listing_more_photos_container > img:first')
-						 .fadeOut(1000)
-						 .next()
-						 .fadeIn(1000)
-						 .end()
-						 .appendTo('.listing_more_photos_container');
-				});
-
-				$('.prev-arrow').on('click', function(){
-						$('.listing_more_photos_container > img:first')
-						 .fadeOut(1000)
-						 .previous()
-						 .fadeIn(1000)
-						 .end()
-						 .appendTo('.listing_more_photos_container');
-				});
-			}
-
-
-
-			// setInterval(function() {
-			//   $('.listing_more_photos_container > img:first')
-			//     .fadeOut(1000)
-			//     .next()
-			//     .fadeIn(1000)
-			//     .end()
-			//     .appendTo('.listing_more_photos_container');
-			// }, 3000);
-
+  
 	});
 </script>
 </head>
