@@ -125,34 +125,34 @@ get_header(); ?>
 											 var mlsNum = $('.listing_more_photos', this).attr('mls');
 											 var largeImg = $('#listing_photoblock_' + mlsNum).attr('photos');
 											 setTimeout(function () {
-					 								$('.listing_more_photos_container').each( function(){
-					 									$(this).prepend('<span class="previous-arrow">   </span>');
-					 									$(this).append('<span class="next-arrow">   </span>');
-					 								});
+							 								$('.listing_more_photos_container').each( function(){
+							 									$(this).prepend('<span class="previous-arrow">   </span>');
+							 									$(this).append('<span class="next-arrow">   </span>');
+							 								});
 
-													$(".listing_more_photos_container > img:gt(0)").hide()
+															$(".listing_more_photos_container > img:gt(0)").hide()
 
-													$('.next-arrow',this).on('click', function(){
-														  console.log('clicked next');
-															$('.listing_more_photos_container > img:first')
-															 .fadeOut(500)
-															 .next()
-															 .fadeIn(500)
-															 .end()
-															 .appendTo('.listing_more_photos_container');
-													})
+															$('.next-arrow').on('click', function(){
+																  console.log('clicked next');
+																	$('.listing_more_photos_container > img:first')
+																	 .fadeOut(500)
+																	 .next()
+																	 .fadeIn(500)
+																	 .end()
+																	 .appendTo('.listing_more_photos_container');
+															})
 
-													$('.previous-arrow', this).on('click', function(){
-														  console.log('clicked previous'); 
-															var lastImg = $('.listing_image_large').last();
-															console.log(lastImg);
-															// $('.listing_more_photos_container > img:first')
-															//  .fadeOut(500);
-															// $('.listing_more_photos_container > img:last-child')
-															//  .fadeIn(500)
-															//  .end()
-															//  .appendTo('.listing_more_photos_container');
-													})
+															$('.previous-arrow').on('click', function(){
+																  console.log('clicked previous');
+																	var lastImg = $('.listing_image_large').last();
+																	console.log(lastImg);
+																	// $('.listing_more_photos_container > img:first')
+																	//  .fadeOut(500);
+																	// $('.listing_more_photos_container > img:last-child')
+																	//  .fadeIn(500)
+																	//  .end()
+																	//  .appendTo('.listing_more_photos_container');
+															})
 					 						}, 300)
 
 
