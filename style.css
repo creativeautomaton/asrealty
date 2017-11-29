@@ -4452,8 +4452,8 @@ header .title-area {
 			z-index: 1;
 }*/
 
-.listing_more_photos_container .next-arrow,
-.listing_more_photos_container .previous-arrow {
+.next-arrow,
+.previous-arrow {
     position: absolute;
     z-index: 1;
     display: block;
@@ -4464,11 +4464,11 @@ header .title-area {
     background: #2c333c;
     color: #eee;
 }
-.listing_more_photos_container .next-arrow {
+.next-arrow {
 			top: 0px;
 		  left: 0px;
 }
-.listing_more_photos_container .previous-arrow {
+.previous-arrow {
 	 top: 0px;
 	 right: 0px;
 }
