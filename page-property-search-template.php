@@ -144,12 +144,14 @@ get_header(); ?>
 
 													$('.previous-arrow').on('click', function(){
 														  console.log('clicked previous');
-															$('.listing_more_photos_container > img:first')
-															 .fadeOut(500);
-															$('.listing_more_photos_container > img:last-child')
-															 .fadeIn(500)
-															 .end()
-															 .appendTo('.listing_more_photos_container');
+															var lastImg = $('.listing_more_photos_container > img:last-child');
+															console.log( );
+															// $('.listing_more_photos_container > img:first')
+															//  .fadeOut(500);
+															// $('.listing_more_photos_container > img:last-child')
+															//  .fadeIn(500)
+															//  .end()
+															//  .appendTo('.listing_more_photos_container');
 													})
 					 						}, 300)
 
