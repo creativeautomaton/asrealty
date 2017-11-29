@@ -147,7 +147,6 @@ get_header(); ?>
 															 .fadeOut(1000)
 															 .prev()
 															 .fadeIn(1000)
-															 .end()
 															 .appendTo('.listing_more_photos_container');
 													})
 					 						}, 300)
