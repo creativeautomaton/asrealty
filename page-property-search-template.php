@@ -77,7 +77,7 @@ get_header(); ?>
 					 $("select[name*='MinBath'] option").filter(function() {  return $(this).val() == baths;  }).attr('selected', true);
 
 					 priceRange = priceRange.split('');
-					 priceRangeLow = priceRange.regex([^a-z ]\ *([.0-9])*\d);
+					 // priceRangeLow = priceRange.regex([^a-z ]\ *([.0-9])*\d);
 					 console.log(priceRange);
 					 $("input[name*='MinPrice']").val(priceRange);
 					 $("input[name*='MaxPrice']").val(priceRange);
