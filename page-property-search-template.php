@@ -21,11 +21,11 @@ get_header(); ?>
 		// s=&post_type=listing&max=250k-500k&min=100k-250k&type=apartment&where=60067
 
 		// $listingType
-		if ($_GET['post_type']) && !empty($_GET['post_type'])) {
+		if ($_GET['post_type']) & !empty($_GET['post_type'])) {
 			$listingType = $_GET['post_type'];
 		}else{
 		 	$listingType = null;
-		} 
+		}
 
 		$saleOrLease =  isset(  $_GET['saleorlease']){ $_GET['post_type']} ;
 		$priceRange = isset( $_GET['priceRange'] );
