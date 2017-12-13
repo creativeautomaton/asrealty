@@ -57,7 +57,7 @@ get_header(); ?>
  			 $baths = null;
  		 }
 
-		echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $priceRange  .' '. $propertyType .' '. $cityZip;
+		// echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $priceRange  .' '. $propertyType .' '. $cityZip;
 ?>
 
 <script>
@@ -85,6 +85,8 @@ get_header(); ?>
 					 $("input[name*='MaxPrice']").val(priceRangeHigh + '000');
 					 $("input[name*='City']").val(cityZip);
 					 console.log( 'loaded getSearch ');
+
+					 $('.propSearchBtns input').trigger();
 			 }
 			 setTimeout(function () {
 			 		getSearch();
