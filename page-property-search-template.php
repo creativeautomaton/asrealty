@@ -26,8 +26,7 @@ get_header(); ?>
 		}else{
 		 	$listingType = null;
 		}
-
-		$saleOrLease =  isset(  $_GET['saleorlease']){ $_GET['post_type']} ;
+		$saleOrLease =  isset(  $_GET['saleorlease']) ;
 		$priceRange = isset( $_GET['priceRange'] );
 		$propertyType = isset( $_GET['type']) ;
 		$cityZip = isset( $_GET['where'] );
