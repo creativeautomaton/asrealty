@@ -89,8 +89,7 @@ get_header(); ?>
 					 var cities = [];
 					 var citiesSplit = $('.zip-cities-list').text().trim().split(',');
 					 for (var i = 0; i <= citiesSplit.length ; i++) {
-						 		var splited = citiesSplit[i].split(' ');
-					 	   cities.push(splited);
+					 	   cities.push(citiesSplit[i]);
 					 }
 					 console.log(cities);
 					 $("input[name*='City']").val(cityZip);
