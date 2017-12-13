@@ -81,8 +81,8 @@ get_header(); ?>
 					 var priceRangeLow = priceRange[0];
 					 var priceRangeHigh = priceRange[1];
 					 console.log(priceRange);
-					 $("input[name*='MinPrice']").val(priceRangeLow);
-					 $("input[name*='MaxPrice']").val(priceRangeHigh);
+					 $("input[name*='MinPrice']").val(priceRangeLow + '000');
+					 $("input[name*='MaxPrice']").val(priceRangeHigh + '000');
 					 $("input[name*='City']").val(cityZip);
 					 console.log( 'loaded getSearch ');
 			 }
