@@ -88,7 +88,7 @@ get_header(); ?>
 					 // City listing
 					 var cities = [];
 					 var citiesSplit = $('.zip-cities-list').text().split(',');
-					 for (var i = 160;  citiesSplit.length < i; i++) {
+					 for (var i = 160; citiesSplit.length > i; i++) {
 					 	   cities.push(citiesSplit[i]);
 					 }
 					 console.log(cities);
