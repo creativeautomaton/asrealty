@@ -97,9 +97,30 @@ get_header(); ?>
 
 					 $('.propSearchBtns input').trigger('click');
 			 }
-			 setTimeout(function () {
-			 		getSearch();
-			 }, 500);
+		 });
+ </script>
+
+ 
+<?php
+ if (isset( $_GET['post_type'] ) && !empty( $_GET['post_type'] ) ) {
+	  ?>
+		<script>
+			 $(document).ready(function() {
+					 setTimeout(function () {
+					 		getSearch();
+					 }, 500);
+				 });
+		 </script>
+		<?php
+ }else{
+
+ }
+
+?>
+
+
+ <script>
+		$(document).ready(function() {
 			 function morePhotosSlider(){
 						$(".listing_more_photos_container > img:gt(0)").hide();
 
