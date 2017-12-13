@@ -76,7 +76,8 @@ get_header(); ?>
 					 $("select[name*='MinBeds'] option").filter(function() {  return $(this).val() == beds;  }).attr('selected', true);
 					 $("select[name*='MinBath'] option").filter(function() {  return $(this).val() == baths;  }).attr('selected', true);
 
-					 priceRange = priceRange.split('');
+					 // priceRange = priceRange.split('');
+					 priceRange = priceRange.substring(0,str.indexOf("-"));
 					 // priceRangeLow = priceRange.regex([^a-z ]\ *([.0-9])*\d);
 					 console.log(priceRange);
 					 $("input[name*='MinPrice']").val(priceRange);
