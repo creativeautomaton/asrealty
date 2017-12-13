@@ -19,8 +19,8 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 <?php
 		// s=&post_type=listing&max=250k-500k&min=100k-250k&type=apartment&where=60067
-		$listingType =  isset( $_GET['post_type'] ) ;
-		$saleOrLease =  isset(  $_GET['saleorlease'] );
+		$listingType =  isset( $_GET['post_type'] ){ $_GET['post_type'] } ;
+		$saleOrLease =  isset(  $_GET['saleorlease']){ $_GET['post_type']} ;
 		$priceRange = isset( $_GET['priceRange'] );
 		$propertyType = isset( $_GET['type']) ;
 		$cityZip = isset( $_GET['where'] );
@@ -47,14 +47,9 @@ get_header(); ?>
 
 					 priceRange = priceRange.split('');
 					 console.log(priceRange);
-
-
 					 $("input[name*='MinPrice']").val(priceRange);
 					 $("input[name*='MaxPrice']").val(priceRange);
 					 $("input[name*='City']").val(cityZip);
-
-
-
 					 console.log( 'loaded getSearch ');
 			 }
 			 setTimeout(function () {
