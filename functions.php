@@ -617,11 +617,11 @@ class ProptertySearchWidget extends WP_Widget {
 
 															<select name="priceRange" id="priceRange" class="agentpress-taxonomy">
 																<option value="" selected="selected">How Much (Max-min)?</option>
-																<option value="under-250k">Under 250K</option>
-																<option value="100k-250k">100K-250K</option>
-																<option value="500k-750k">500K-750K</option>
-																<option value="250k-500k">250K-500K</option>
-																<option value="over-750k">Over 750K</option>
+																<option value="-250">Under 250K</option>
+																<option value="100-250">100K-250K</option>
+																<option value="500-750">500K-750K</option>
+																<option value="250-500">250K-500K</option>
+																<option value="750+">Over 750K</option>
 															</select>
 
 															<select name="type" id="type" class="agentpress-taxonomy">
