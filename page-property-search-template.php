@@ -270,7 +270,7 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<span class="hidden zip-cities-list" >
+<span style="display: none;" class=" zip-cities-list" >
 62001 Alhambra, IL
 62002 Alton, IL
 62006 Batchtown, IL

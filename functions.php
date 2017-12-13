@@ -661,9 +661,14 @@ class ProptertySearchWidget extends WP_Widget {
 
 															<select name="where" id="where" class="agentpress-taxonomy">
 																<option value="" selected="selected">Where?</option>
-																<option value="63139">63139</option>
+																<option value="Chesterfield">Chesterfield</option>
 																<option value="creve coeur">Creve Couer</option>
-																<option value="maryland hieghts">Maryland Heights</option>
+																<option value="Clayton">Clayton</option>
+																<option value="Florissant">Florissant</option>
+																<option value="Hazelwood">Hazelwood</option>
+																<option value="maryland heights">Maryland Heights</option>
+																<option value="Saint Louis">Saint Louis</option>
+																<option value="Saint Peters">Saint Peters</option>
 														</select>
 
 														<input id="searchsubmit" class="searchsubmit" value="Search Homes" type="submit">
