@@ -86,7 +86,7 @@ get_header(); ?>
 					 $("input[name*='City']").val(cityZip);
 					 console.log( 'loaded getSearch ');
 
-					 $('.propSearchBtns input').trigger();
+					 $('.propSearchBtns input').trigger('click');
 			 }
 			 setTimeout(function () {
 			 		getSearch();
