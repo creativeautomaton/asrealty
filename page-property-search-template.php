@@ -26,12 +26,37 @@ get_header(); ?>
 		}else{
 		 	$listingType = null;
 		}
-		$saleOrLease =  isset(  $_GET['saleorlease']) ;
-		$priceRange = isset( $_GET['priceRange'] );
-		$propertyType = isset( $_GET['type']) ;
-		$cityZip = isset( $_GET['where'] );
-		$beds = isset( $_GET['MinBeds']) ;
-		$baths = isset( $_GET['MinBaths'] );
+		if (isset( $_GET['saleorlease'] ) && !empty( $_GET['saleorlease'] ) ) {
+			$saleOrLease = $_GET['saleorlease'];
+		}else{
+		 	$saleOrLease = null;
+		}
+		if (isset( $_GET['priceRange'] ) && !empty( $_GET['priceRange'] ) ) {
+			$priceRange = $_GET['priceRange'];
+		}else{
+		  $priceRange = null;
+		}
+		if (isset( $_GET['type'] ) && !empty( $_GET['type'] ) ) {
+			$propertyType = $_GET['type'];
+		}else{
+		  $propertyType = null;
+		}
+		if (isset( $_GET['where'] ) && !empty( $_GET['where'] ) ) {
+			$cityZip = $_GET['where'];
+		}else{
+		  $cityZip = null;
+		}
+		if (isset( $_GET['MinBeds'] ) && !empty( $_GET['MinBeds'] ) ) {
+		 $beds = $_GET['MinBeds'];
+		 }else{
+			 $beds = null;
+		 }
+		 if (isset( $_GET['MinBaths'] ) && !empty( $_GET['MinBaths'] ) ) {
+ 		  $baths = $_GET['MinBaths'];
+ 		 }else{
+ 			 $baths = null;
+ 		 }
+		 
 		echo $baths .' '. $beds .' '. $saleOrLease .'  '. $listingType .'  '. $priceRange  .' '. $propertyType .' '. $cityZip;
 ?>
 
